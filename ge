@@ -8742,3 +8742,17 @@ SettingsTab:AddToggle({
 
 
 
+local infromation = Window:MakeTab({
+    Title = "الحقوق",
+    Icon = "rbxassetid://10723415903"
+})
+
+
+infromation:AddSection({
+    Name = "المعلومات"
+})
+
+infromation:AddSection({
+    Name = "1. يمنع سرقه السكربت او التعديل عليه"
+})
+end
