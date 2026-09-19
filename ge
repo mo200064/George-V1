@@ -1,4 +1,7 @@
+--// GeorgeHub Loading Screen
+--// LocalScript مستقل
 
+local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 
 local player = Players.LocalPlayer
@@ -402,7 +405,7 @@ RightsTab:AddSection({
 RightsTab:AddSection("المطورين")
 for _, username in ipairs(DeveloperNames) do
     RightsTab:AddParagraph({
-        Title = "🛡️ " .. username,
+        Title = " " .. username,
         Text = "مطور"
     })
 end
@@ -678,8 +681,29 @@ RightsTab:AddSlider({
 
 
 
-RightsTab:AddSection(" إعدادات الرتبة  ")
+RightsTab:AddSection("👤 إعدادات الرتبة فوق الرأس")
 
+RightsTab:AddToggle({
+    Name = "إظهار  او اخفاء ",
+    Default = true,
+    Callback = function(value)
+        ShowOwnRankTag = value
+
+        if not value then
+            if RankTags[LocalPlayer] then
+                pcall(function() RankTags[LocalPlayer]:Destroy() end)
+                RankTags[LocalPlayer] = nil
+            end
+        else
+            task.spawn(function()
+                task.wait(0.1)
+                if LocalPlayer.Character then
+                    CreateRankTag(LocalPlayer)
+                end
+            end)
+        end
+    end
+})
 
 RightsTab:AddToggle({
     Name = "إخفاء رتب كل اللاعبين",
@@ -8452,7 +8476,33 @@ do
 
 
   
-   
+   SamlaTab:AddToggle({
+    Name = " بانج خلفي",
+    Default = false,
+    Callback = function(v)
+        R.back = v
+        R.env.isTargetBang = v
+        R.save("TargetBang", v)
+
+        if v then
+            -- تشغيل البانج الخلفي
+            R.startBack()
+
+            -- تشغيل أنميشن الـBang
+            task.defer(function()
+                if R.back then
+                    R.playAnim()
+                end
+            end)
+        else
+            -- إيقاف البانج الخلفي
+            R.stopBack()
+
+            -- إيقاف أنميشن الـBang
+            R.stopAnim()
+        end
+    end
+})
     -- 🪑 جلوس على رأس اللاعب
     R.head = false
     R.headConn = nil
@@ -8685,6 +8735,10 @@ SettingsTab:AddToggle({
 })
 
 
---// ========================
---//      لا تحاول السرقه نوقطه
---// ========================
+--// =========================
+--//      PERFORMANCE
+--// =========================
+
+
+
+
