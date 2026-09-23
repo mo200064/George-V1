@@ -1469,7 +1469,7 @@ local WindowBackground = Create("Frame", MainFrame, {
     BorderSizePixel = 0,
     ZIndex = 0
 })
-Make("Corner", WindowBackground)
+Make("Corner", WindowBackground, UDim.new(0, 15))
 
 local WindowBackgroundImage = Create("ImageLabel", WindowBackground, {
     Name = "BackgroundImage",
@@ -1484,20 +1484,6 @@ local WindowBackgroundImage = Create("ImageLabel", WindowBackground, {
 })
 Make("Corner", WindowBackgroundImage)
 
--- الدائرة المتحركة خلف عناصر الواجهة
-local RotatingCircle = Create("ImageLabel", MainFrame, {
-    Name = "RotatingCircleBackground",
-    Size = UDim2.new(0, 420, 0, 420),
-    Position = UDim2.new(0.5, 0, 0.5, 0),
-    AnchorPoint = Vector2.new(0.5, 0.5),
-    BackgroundTransparency = 1,
-    Image = "rbxassetid://130334037904399",
-    ImageTransparency = 0.12,
-    ScaleType = Enum.ScaleType.Fit,
-    BorderSizePixel = 0,
-    ZIndex = 1
-})
-Make("Corner", RotatingCircle)
 
 -- تدرج للمحتوى
 Make("Gradient", MainFrame, {
@@ -1505,7 +1491,7 @@ Make("Gradient", MainFrame, {
 })
 
 MakeDrag(MainFrame)
-local MainCorner = Make("Corner", MainFrame)
+local MainCorner = Make("Corner", MainFrame, UDim.new(0, 15))
 
 -- الإطار (Stroke)
 local Stroke = Create("UIStroke", MainFrame, {
@@ -1532,9 +1518,6 @@ local DropdownHolder = Create("Folder", ScreenGui, {
 -- أنيميشن دوران التدرج
 RunService.RenderStepped:Connect(function()
     StrokeGradient.Rotation = (StrokeGradient.Rotation + 2) % 360
-    if RotatingCircle and RotatingCircle.Parent then
-        RotatingCircle.Rotation = (RotatingCircle.Rotation + 1.5) % 360
-    end
 end)
 
 
