@@ -1301,7 +1301,8 @@ local function ButtonFrame(Instance, Title, Description, HolderSize)
 		Size = UDim2.new(1, 0, 0, 25),
 		AutomaticSize = "Y",
 		Name = "Option"
-	})Make("Corner", Frame, UDim.new(0, 6))
+	})
+Make("Corner", Frame, UDim.new(0, 6))
 	
 	local LabelHolder = Create("Frame", Frame, {
 		AutomaticSize = "Y",
@@ -1988,7 +1989,9 @@ local ParticleConnection = RunService.Heartbeat:Connect(function(dt)
 				BackgroundTransparency = 1,
 				TextWrapped = true
 			}), "DarkText")
-		})Make("Gradient", Frame, {Rotation = 270})Make("Corner", Frame)
+		})
+Make("Gradient", Frame, {Rotation = 270})
+Make("Corner", Frame)
 		
 		local ButtonsHolder = Create("Frame", Frame, {
 			Size = UDim2.fromScale(1, 0.35),
@@ -2087,7 +2090,8 @@ local ParticleConnection = RunService.Heartbeat:Connect(function(dt)
         })
         TabSelect.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
         TabSelect.BackgroundTransparency = 0
-        TabSelect.ZIndex = 11Make("Corner", TabSelect)
+        TabSelect.ZIndex = 11
+		Make("Corner", TabSelect)
 		
 		local LabelTitle = InsertTheme(Create("TextLabel", TabSelect, {
 			Size = UDim2.new(1, TIcon and -25 or -15, 1),
@@ -2117,7 +2121,8 @@ local ParticleConnection = RunService.Heartbeat:Connect(function(dt)
 			AnchorPoint = Vector2.new(0, 0.5),
 			BackgroundColor3 = Theme["Color Theme"],
 			BackgroundTransparency = FirstTab and 1 or 0
-		}), "Theme")Make("Corner", Selected, UDim.new(0.5, 0))
+		}), "Theme")
+Make("Corner", Selected, UDim.new(0.5, 0))
 		
 		local Container = InsertTheme(Create("ScrollingFrame", {
 			Size = UDim2.new(1, 0, 1, 0),
@@ -2302,7 +2307,8 @@ local ParticleConnection = RunService.Heartbeat:Connect(function(dt)
 				Position = UDim2.new(1, -10, 0.5),
 				AnchorPoint = Vector2.new(1, 0.5),
 				BackgroundColor3 = Theme["Color Stroke"]
-			}), "Stroke")Make("Corner", ToggleHolder, UDim.new(0.5, 0))
+			}), "Stroke")
+Make("Corner", ToggleHolder, UDim.new(0.5, 0))
 			
 			local Slider = Create("Frame", ToggleHolder, {
 				BackgroundTransparency = 1,
@@ -2316,7 +2322,8 @@ local ParticleConnection = RunService.Heartbeat:Connect(function(dt)
 				Position = UDim2.new(0, 0, 0.5),
 				AnchorPoint = Vector2.new(0, 0.5),
 				BackgroundColor3 = Theme["Color Theme"]
-			}), "Theme")Make("Corner", Toggle, UDim.new(0.5, 0))
+			}), "Theme")
+Make("Corner", Toggle, UDim.new(0.5, 0))
 			
 			local WaitClick
 			local function SetToggle(Val)
@@ -2378,7 +2385,8 @@ local ParticleConnection = RunService.Heartbeat:Connect(function(dt)
 				Position = UDim2.new(1, -10, 0.5),
 				AnchorPoint = Vector2.new(1, 0.5),
 				BackgroundColor3 = Theme["Color Stroke"]
-			}), "Stroke")Make("Corner", SelectedFrame, UDim.new(0, 4))
+			}), "Stroke")
+Make("Corner", SelectedFrame, UDim.new(0, 4))
 			
 			local ActiveLabel = InsertTheme(Create("TextLabel", SelectedFrame, {
 				Size = UDim2.new(0.85, 0, 0.85, 0),
@@ -2415,7 +2423,10 @@ local ParticleConnection = RunService.Heartbeat:Connect(function(dt)
 				Name = "DropdownFrame",
 				ClipsDescendants = true,
 				Active = true
-			})Make("Corner", DropFrame)Make("Stroke", DropFrame)Make("Gradient", DropFrame, {Rotation = 60})
+			})
+Make("Corner", DropFrame)
+Make("Stroke", DropFrame)
+Make("Gradient", DropFrame, {Rotation = 60})
 			
 			local ScrollFrame = InsertTheme(Create("ScrollingFrame", DropFrame, {
 				ScrollBarImageColor3 = Theme["Color Theme"],
@@ -2590,7 +2601,8 @@ local ParticleConnection = RunService.Heartbeat:Connect(function(dt)
 						Size = UDim2.new(1, 0, 0, 21),
 						Position = UDim2.new(0, 0, 0.5),
 						AnchorPoint = Vector2.new(0, 0.5)
-					})Make("Corner", Button, UDim.new(0, 4))
+					})
+Make("Corner", Button, UDim.new(0, 4))
 					
 					local IsSelected = InsertTheme(Create("Frame", Button, {
 						Position = UDim2.new(0, 1, 0.5),
@@ -2598,7 +2610,8 @@ local ParticleConnection = RunService.Heartbeat:Connect(function(dt)
 						BackgroundColor3 = Theme["Color Theme"],
 						BackgroundTransparency = 1,
 						AnchorPoint = Vector2.new(0, 0.5)
-					}), "Theme")Make("Corner", IsSelected, UDim.new(0.5, 0))
+					}), "Theme")
+Make("Corner", IsSelected, UDim.new(0.5, 0))
 					
 					local OptioneName = InsertTheme(Create("TextLabel", Button, {
 						Size = UDim2.new(1, 0, 1),
@@ -2769,13 +2782,15 @@ end
 				Size = UDim2.new(1, -20, 0, 6),
 				Position = UDim2.new(0.5, 0, 0.5),
 				AnchorPoint = Vector2.new(0.5, 0.5)
-			}), "Stroke")Make("Corner", SliderBar)
+			}), "Stroke")
+Make("Corner", SliderBar)
 			
 			local Indicator = InsertTheme(Create("Frame", SliderBar, {
 				BackgroundColor3 = Theme["Color Theme"],
 				Size = UDim2.fromScale(0.3, 1),
 				BorderSizePixel = 0
-			}), "Theme")Make("Corner", Indicator)
+			}), "Theme")
+Make("Corner", Indicator)
 			
 			local SliderIcon = Create("Frame", SliderBar, {
 				Size = UDim2.new(0, 6, 0, 12),
@@ -2783,7 +2798,8 @@ end
 				Position = UDim2.fromScale(0.3, 0.5),
 				AnchorPoint = Vector2.new(0.5, 0.5),
 				BackgroundTransparency = 0.2
-			})Make("Corner", SliderIcon)
+			})
+Make("Corner", SliderIcon)
 			
 			local LabelVal = InsertTheme(Create("TextLabel", SliderHolder, {
 				Size = UDim2.new(0, 14, 0, 14),
@@ -2855,7 +2871,8 @@ end
 				CreateTween({ SliderIcon, "Position", UDim2.fromScale(math.clamp(SliderPos, 0, 1), 0.5), 0.3, true })
 			end;SetSlider(Default)
 			
-			SliderIcon:GetPropertyChangedSignal("Position"):Connect(UpdateValues)UpdateValues()
+			SliderIcon:GetPropertyChangedSignal("Position"):Connect(UpdateValues)
+			UpdateValues()
 			
 			local Slider = {}
 			function Slider:Set(NewVal1, NewVal2)
@@ -2894,7 +2911,8 @@ end
 				Position = UDim2.new(1, -10, 0.5),
 				AnchorPoint = Vector2.new(1, 0.5),
 				BackgroundColor3 = Theme["Color Stroke"]
-			}), "Stroke")Make("Corner", SelectedFrame, UDim.new(0, 4))
+			}), "Stroke")
+Make("Corner", SelectedFrame, UDim.new(0, 4))
 			
 			local TextBoxInput = InsertTheme(Create("TextBox", SelectedFrame, {
 				Size = UDim2.new(0.85, 0, 0.85, 0),
@@ -2927,7 +2945,8 @@ end
 				end
 			end
 			
-			TextBoxInput.FocusLost:Connect(Input)Input()
+			TextBoxInput.FocusLost:Connect(Input)
+			Input()
 			
 			TextBoxInput.FocusLost:Connect(function()
 				CreateTween({Pencil, "ImageColor3", Color3.fromRGB(255, 255, 255), 0.2})
@@ -2970,14 +2989,17 @@ end
 		AnchorPoint = Vector2.new(0, 1),
 		Position = UDim2.new(0, 0, 1),
 		BackgroundColor3 = Color3.fromRGB(90, 0, 150)
-	}), "Frame") Make("Corner", FrameHolder)
+	}), "Frame")
+Make("Corner", FrameHolder)
 
 	local ImageLabel = Create("ImageLabel", FrameHolder, {
 		Size = UDim2.new(0, 30, 0, 30),
 		Position = UDim2.new(0, 7, 0, 7),
 		Image = Logo,
 		BackgroundTransparency = 1
-	}) Make("Corner", ImageLabel, UDim.new(0, 4)) Make("Stroke", ImageLabel)
+	})
+Make("Corner", ImageLabel, UDim.new(0, 4))
+Make("Stroke", ImageLabel)
 
 	local LTitle = InsertTheme(Create("TextLabel", FrameHolder, {
 		Size = UDim2.new(1, -52, 0, 15),
@@ -3012,7 +3034,8 @@ end
 		TextSize = 12,
 		TextColor3 = Color3.fromRGB(0, 0, 0),
 		BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	}) Make("Corner", JoinButton, UDim.new(0, 5))
+	})
+Make("Corner", JoinButton, UDim.new(0, 5))
 
 	local ClickDelay
 	JoinButton.Activated:Connect(function()
