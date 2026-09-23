@@ -1285,7 +1285,7 @@ local function ButtonFrame(Instance, Title, Description, HolderSize)
 	
 	local DescL = InsertTheme(Create("TextLabel", {
 		Font = Enum.Font.Gotham,
-		TextColor3 = Color3.fromRGB(255, 255, 255),
+		TextColor3 = Theme["Color Dark Text"],
 		Size = UDim2.new(1, -20),
 		AutomaticSize = "Y",
 		Position = UDim2.new(0, 12, 0, 15),
@@ -1482,8 +1482,7 @@ local WindowBackgroundImage = Create("ImageLabel", WindowBackground, {
     BorderSizePixel = 0,
     ZIndex = 0
 })
-Make("Corner", WindowBackgroundImage)
-
+Make("Corner", WindowBackgroundImage, UDim.new(0, 15))
 
 -- تدرج للمحتوى
 Make("Gradient", MainFrame, {
@@ -1552,7 +1551,7 @@ end)
 			AnchorPoint = Vector2.new(0, 1),
 			Position = UDim2.new(1, 5, 0.9),
 			Text = WMiniText,
-			TextColor3 = Color3.fromRGB(255, 255, 255),
+			TextColor3 = Theme["Color Dark Text"],
 			BackgroundTransparency = 1,
 			TextXAlignment = "Left",
 			TextYAlignment = "Bottom",
@@ -1977,7 +1976,7 @@ local ParticleConnection = RunService.Heartbeat:Connect(function(dt)
 				AutomaticSize = "Y",
 				Text = DText,
 				TextXAlignment = "Left",
-				TextColor3 = Color3.fromRGB(255, 255, 255),
+				TextColor3 = Theme["Color Dark Text"],
 				TextSize = 12,
 				Position = UDim2.fromOffset(15, 25),
 				BackgroundTransparency = 1,
