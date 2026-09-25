@@ -1626,7 +1626,7 @@ local WindowBackground = Create("ImageLabel", MainFrame, {
     Position = UDim2.new(0, 0, 0, 0),
     BackgroundTransparency = 1,
 	-- هذا المعرّف هو صورة الخلفية نفسها
-    Image = "rbxassetid://114138477258742", 
+    Image = "rbxassetid://11742284405", 
     ImageTransparency = 0.2,
     ScaleType = Enum.ScaleType.Crop,
     ZIndex = 0
@@ -1695,7 +1695,7 @@ local GlowImage = Create("ImageLabel", MainFrame, {
     AnchorPoint = Vector2.new(0.5, 0.5),
     BackgroundTransparency = 1,
 	-- معرّف صورة التوهج الدائري
-    Image = "rbxassetid://100332730008609",
+    Image = "rbxassetid://91594933210865",
     ImageTransparency = 0,
     ZIndex = 0
 })
@@ -4458,3 +4458,4 @@ end
 return redzlib
 
 -- by George
+
