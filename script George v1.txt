@@ -1626,7 +1626,7 @@ local WindowBackground = Create("ImageLabel", MainFrame, {
     Position = UDim2.new(0, 0, 0, 0),
     BackgroundTransparency = 1,
 	-- هذا المعرّف هو صورة الخلفية نفسها
-    Image = "rbxassetid://11742284405", 
+    Image = "rbxassetid://114138477258742", 
     ImageTransparency = 0.2,
     ScaleType = Enum.ScaleType.Crop,
     ZIndex = 0
@@ -1695,7 +1695,7 @@ local GlowImage = Create("ImageLabel", MainFrame, {
     AnchorPoint = Vector2.new(0.5, 0.5),
     BackgroundTransparency = 1,
 	-- معرّف صورة التوهج الدائري
-    Image = "rbxassetid://91594933210865",
+    Image = "rbxassetid://116569809317421",
     ImageTransparency = 0,
     ZIndex = 0
 })
@@ -1988,9 +1988,9 @@ local CloseButton = Create("ImageButton", {
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
 			Title = "رسالة تأكيد",
-			Text = "هل تريد إغلاق السكربت ؟",
+			Text = "بدك تسكر السكربت ؟",
 			Options = {
-				{"نعم", function()
+				{"اه حل عني", function()
 					ScreenGui:Destroy()
 				end},
 				{"لا"}
@@ -4458,4 +4458,3 @@ end
 return redzlib
 
 -- by George
-
