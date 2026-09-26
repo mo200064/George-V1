@@ -1122,7 +1122,7 @@ HubMusic.Volume = 0.5
 HubMusic.Looped = true
 HubMusic.Parent = ScreenGui
 
-local HubMusicEnabled = true
+local HubMusicEnabled = false
 
 local function SetHubMusicEnabled(enabled)
     HubMusicEnabled = enabled
@@ -1142,7 +1142,7 @@ local WindowBackground = Create("ImageLabel", MainFrame, {
     Size = UDim2.new(1, 0, 1, 0),
     Position = UDim2.new(0, 0, 0, 0),
     BackgroundTransparency = 1,
-    Image = "rbxassetid://508197089",
+    Image = "rbxassetid://602459923",
     ImageTransparency = 0.0,
     ScaleType = Enum.ScaleType.Crop,
     ZIndex = 0
@@ -1222,7 +1222,7 @@ local GlowImage = Create("ImageLabel", MainFrame, {
     Position = UDim2.fromScale(0.5, 0.5),
     AnchorPoint = Vector2.new(0.5, 0.5),
     BackgroundTransparency = 1,
-    Image = "rbxassetid://119304293675964",
+    Image = "rbxassetid://140033118995595",
     ImageTransparency = 0,
     ZIndex = 0
 })
@@ -1522,6 +1522,7 @@ end)
 				{"نعم", function()  -- باتن الموافقه ايزي يعني
 					if HubMusic then
                         HubMusic:Stop()
+                        HubMusic:Destroy()
                     end
                     ScreenGui:Destroy()
 				end},
@@ -1553,7 +1554,15 @@ end)
 	function Window:Minimize()
 		MainFrame.Visible = not MainFrame.Visible
 	end
-	function Window:AddMinimizeButton(Configs)
+	MainFrame:GetPropertyChangedSignal("Visible"):Connect(function()
+    if MainFrame.Visible and not Minimized then
+        SetHubMusicEnabled(true)
+    else
+        SetHubMusicEnabled(false)
+    end
+end)
+
+function Window:AddMinimizeButton(Configs)
 		local Button = MakeDrag(Create("ImageButton", ScreenGui, {
 			Size = UDim2.fromOffset(35, 35),
 			Position = UDim2.fromScale(0.15, 0.15),
@@ -3323,5 +3332,5 @@ return redzlib
 
 
 
+-- be George
 
--- be George  
