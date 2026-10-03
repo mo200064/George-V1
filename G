@@ -49,7 +49,6 @@
 
 
 -- by george
-
 return(function(...)
 local _5xx=type
 local _5dt=(loadstring or load)
