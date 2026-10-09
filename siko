@@ -1,7 +1,4 @@
---[[
-    Оrіgіnаl Cоdе Dеоbfuѕcаtеԁ Ву LеakD
-    https://discord.gg/AwGHNh7Z7T
-]]
+
 
 local userInputService = game:GetService("UserInputService")
 local tweenService = game:GetService("TweenService")
@@ -3475,4 +3472,4 @@ end
 
 return v1
 
--- https://discord.gg/AwGHNh7Z7T
+
