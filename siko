@@ -1,0 +1,3478 @@
+--[[
+    Оrіgіnаl Cоdе Dеоbfuѕcаtеԁ Ву LеakD
+    https://discord.gg/AwGHNh7Z7T
+]]
+
+local userInputService = game:GetService("UserInputService")
+local tweenService = game:GetService("TweenService")
+local httpService = game:GetService("HttpService")
+local runService = game:GetService("RunService")
+local coreGui = game:GetService("CoreGui")
+local players = game:GetService("Players")
+local marketplaceService = game:GetService("MarketplaceService")
+
+local localPlayer = players.LocalPlayer
+localPlayer:GetMouse()
+
+local function f1()
+  return {
+    accessibility = "rbxassetid://10709751939",
+    activity = "rbxassetid://10709752035",
+    airvent = "rbxassetid://10709752131",
+    airplay = "rbxassetid://10709752254",
+    alarmcheck = "rbxassetid://10709752405",
+    alarmclock = "rbxassetid://10709752630",
+    alarmclockoff = "rbxassetid://10709752508",
+    alarmminus = "rbxassetid://10709752732",
+    alarmplus = "rbxassetid://10709752825",
+    album = "rbxassetid://10709752906",
+    alertcircle = "rbxassetid://10709752996",
+    alertoctagon = "rbxassetid://10709753064",
+    alerttriangle = "rbxassetid://10709753149",
+    aligncenter = "rbxassetid://10709753570",
+    aligncenterhorizontal = "rbxassetid://10709753272",
+    aligncentervertical = "rbxassetid://10709753421",
+    alignendhorizontal = "rbxassetid://10709753692",
+    alignendvertical = "rbxassetid://10709753808",
+    alignhorizontaldistributecenter = "rbxassetid://10747779791",
+    alignhorizontaldistributeend = "rbxassetid://10747784534",
+    alignhorizontaldistributestart = "rbxassetid://10709754118",
+    alignhorizontaljustifycenter = "rbxassetid://10709754204",
+    alignhorizontaljustifyend = "rbxassetid://10709754317",
+    alignhorizontaljustifystart = "rbxassetid://10709754436",
+    alignhorizontalspacearound = "rbxassetid://10709754590",
+    alignhorizontalspacebetween = "rbxassetid://10709754749",
+    alignjustify = "rbxassetid://10709759610",
+    alignleft = "rbxassetid://10709759764",
+    alignright = "rbxassetid://10709759895",
+    alignstarthorizontal = "rbxassetid://10709760051",
+    alignstartvertical = "rbxassetid://10709760244",
+    alignverticaldistributecenter = "rbxassetid://10709760351",
+    alignverticaldistributeend = "rbxassetid://10709760434",
+    alignverticaldistributestart = "rbxassetid://10709760612",
+    alignverticaljustifycenter = "rbxassetid://10709760814",
+    alignverticaljustifyend = "rbxassetid://10709761003",
+    alignverticaljustifystart = "rbxassetid://10709761176",
+    alignverticalspacearound = "rbxassetid://10709761324",
+    alignverticalspacebetween = "rbxassetid://10709761434",
+    anchor = "rbxassetid://10709761530",
+    angry = "rbxassetid://10709761629",
+    annoyed = "rbxassetid://10709761722",
+    aperture = "rbxassetid://10709761813",
+    apple = "rbxassetid://10709761889",
+    archive = "rbxassetid://10709762233",
+    archiverestore = "rbxassetid://10709762058",
+    armchair = "rbxassetid://10709762327",
+    arrowbigdown = "rbxassetid://10747796644",
+    arrowbigleft = "rbxassetid://10709762574",
+    arrowbigright = "rbxassetid://10709762727",
+    arrowbigup = "rbxassetid://10709762879",
+    arrowdown = "rbxassetid://10709767827",
+    arrowdowncircle = "rbxassetid://10709763034",
+    arrowdownleft = "rbxassetid://10709767656",
+    arrowdownright = "rbxassetid://10709767750",
+    arrowleft = "rbxassetid://10709768114",
+    arrowleftcircle = "rbxassetid://10709767936",
+    arrowleftright = "rbxassetid://10709768019",
+    arrowright = "rbxassetid://10709768347",
+    arrowrightcircle = "rbxassetid://10709768226",
+    arrowup = "rbxassetid://10709768939",
+    arrowupcircle = "rbxassetid://10709768432",
+    arrowupdown = "rbxassetid://10709768538",
+    arrowupleft = "rbxassetid://10709768661",
+    arrowupright = "rbxassetid://10709768787",
+    asterisk = "rbxassetid://10709769095",
+    atsign = "rbxassetid://10709769286",
+    award = "rbxassetid://10709769406",
+    axe = "rbxassetid://10709769508",
+    axis3d = "rbxassetid://10709769598",
+    baby = "rbxassetid://10709769732",
+    backpack = "rbxassetid://10709769841",
+    baggageclaim = "rbxassetid://10709769935",
+    banana = "rbxassetid://10709770005",
+    banknote = "rbxassetid://10709770178",
+    barchart = "rbxassetid://10709773755",
+    barchart2 = "rbxassetid://10709770317",
+    barchart3 = "rbxassetid://10709770431",
+    barchart4 = "rbxassetid://10709770560",
+    barcharthorizontal = "rbxassetid://10709773669",
+    barcode = "rbxassetid://10747360675",
+    baseline = "rbxassetid://10709773863",
+    bath = "rbxassetid://10709773963",
+    battery = "rbxassetid://10709774640",
+    batterycharging = "rbxassetid://10709774068",
+    batteryfull = "rbxassetid://10709774206",
+    batterylow = "rbxassetid://10709774370",
+    batterymedium = "rbxassetid://10709774513",
+    beaker = "rbxassetid://10709774756",
+    bed = "rbxassetid://10709775036",
+    beddouble = "rbxassetid://10709774864",
+    bedsingle = "rbxassetid://10709774968",
+    beer = "rbxassetid://10709775167",
+    bell = "rbxassetid://10709775704",
+    bellminus = "rbxassetid://10709775241",
+    belloff = "rbxassetid://10709775320",
+    bellplus = "rbxassetid://10709775448",
+    bellring = "rbxassetid://10709775560",
+    bike = "rbxassetid://10709775894",
+    binary = "rbxassetid://10709776050",
+    bitcoin = "rbxassetid://10709776126",
+    bluetooth = "rbxassetid://10709776655",
+    bluetoothconnected = "rbxassetid://10709776240",
+    bluetoothoff = "rbxassetid://10709776344",
+    bluetoothsearching = "rbxassetid://10709776501",
+    bold = "rbxassetid://10747813908",
+    bomb = "rbxassetid://10709781460",
+    bone = "rbxassetid://10709781605",
+    book = "rbxassetid://10709781824",
+    bookopen = "rbxassetid://10709781717",
+    bookmark = "rbxassetid://10709782154",
+    bookmarkminus = "rbxassetid://10709781919",
+    bookmarkplus = "rbxassetid://10709782044",
+    bot = "rbxassetid://10709782230",
+    box = "rbxassetid://10709782497",
+    boxselect = "rbxassetid://10709782342",
+    boxes = "rbxassetid://10709782582",
+    briefcase = "rbxassetid://10709782662",
+    brush = "rbxassetid://10709782758",
+    bug = "rbxassetid://10709782845",
+    building = "rbxassetid://10709783051",
+    building2 = "rbxassetid://10709782939",
+    bus = "rbxassetid://10709783137",
+    cake = "rbxassetid://10709783217",
+    calculator = "rbxassetid://10709783311",
+    calendar = "rbxassetid://10709789505",
+    calendarcheck = "rbxassetid://10709783474",
+    calendarcheck2 = "rbxassetid://10709783392",
+    calendarclock = "rbxassetid://10709783577",
+    calendardays = "rbxassetid://10709783673",
+    calendarheart = "rbxassetid://10709783835",
+    calendarminus = "rbxassetid://10709783959",
+    calendaroff = "rbxassetid://10709788784",
+    calendarplus = "rbxassetid://10709788937",
+    calendarrange = "rbxassetid://10709789053",
+    calendarsearch = "rbxassetid://10709789200",
+    calendarx = "rbxassetid://10709789407",
+    calendarx2 = "rbxassetid://10709789329",
+    camera = "rbxassetid://10709789686",
+    cameraoff = "rbxassetid://10747822677",
+    car = "rbxassetid://10709789810",
+    carrot = "rbxassetid://10709789960",
+    cast = "rbxassetid://10709790097",
+    charge = "rbxassetid://10709790202",
+    check = "rbxassetid://10709790644",
+    checkcircle = "rbxassetid://10709790387",
+    checkcircle2 = "rbxassetid://10709790298",
+    checksquare = "rbxassetid://10709790537",
+    chefhat = "rbxassetid://10709790757",
+    cherry = "rbxassetid://10709790875",
+    chevrondown = "rbxassetid://10709790948",
+    chevronfirst = "rbxassetid://10709791015",
+    chevronlast = "rbxassetid://10709791130",
+    chevronleft = "rbxassetid://10709791281",
+    chevronright = "rbxassetid://10709791437",
+    chevronup = "rbxassetid://10709791523",
+    chevronsdown = "rbxassetid://10709796864",
+    chevronsdownup = "rbxassetid://10709791632",
+    chevronsleft = "rbxassetid://10709797151",
+    chevronsleftright = "rbxassetid://10709797006",
+    chevronsright = "rbxassetid://10709797382",
+    chevronsrightleft = "rbxassetid://10709797274",
+    chevronsup = "rbxassetid://10709797622",
+    chevronsupdown = "rbxassetid://10709797508",
+    chrome = "rbxassetid://10709797725",
+    circle = "rbxassetid://10709798174",
+    circledot = "rbxassetid://10709797837",
+    circleellipsis = "rbxassetid://10709797985",
+    circleslashed = "rbxassetid://10709798100",
+    citrus = "rbxassetid://10709798276",
+    clapperboard = "rbxassetid://10709798350",
+    clipboard = "rbxassetid://10709799288",
+    clipboardcheck = "rbxassetid://10709798443",
+    clipboardcopy = "rbxassetid://10709798574",
+    clipboardedit = "rbxassetid://10709798682",
+    clipboardlist = "rbxassetid://10709798792",
+    clipboardsignature = "rbxassetid://10709798890",
+    clipboardtype = "rbxassetid://10709798999",
+    clipboardx = "rbxassetid://10709799124",
+    clock = "rbxassetid://10709805144",
+    clock1 = "rbxassetid://10709799535",
+    clock10 = "rbxassetid://10709799718",
+    clock11 = "rbxassetid://10709799818",
+    clock12 = "rbxassetid://10709799962",
+    clock2 = "rbxassetid://10709803876",
+    clock3 = "rbxassetid://10709803989",
+    clock4 = "rbxassetid://10709804164",
+    clock5 = "rbxassetid://10709804291",
+    clock6 = "rbxassetid://10709804435",
+    clock7 = "rbxassetid://10709804599",
+    clock8 = "rbxassetid://10709804784",
+    clock9 = "rbxassetid://10709804996",
+    cloud = "rbxassetid://10709806740",
+    cloudcog = "rbxassetid://10709805262",
+    clouddrizzle = "rbxassetid://10709805371",
+    cloudfog = "rbxassetid://10709805477",
+    cloudhail = "rbxassetid://10709805596",
+    cloudlightning = "rbxassetid://10709805727",
+    cloudmoon = "rbxassetid://10709805942",
+    cloudmoonrain = "rbxassetid://10709805838",
+    cloudoff = "rbxassetid://10709806060",
+    cloudrain = "rbxassetid://10709806277",
+    cloudrainwind = "rbxassetid://10709806166",
+    cloudsnow = "rbxassetid://10709806374",
+    cloudsun = "rbxassetid://10709806631",
+    cloudsunrain = "rbxassetid://10709806475",
+    cloudy = "rbxassetid://10709806859",
+    clover = "rbxassetid://10709806995",
+    code = "rbxassetid://10709810463",
+    code2 = "rbxassetid://10709807111",
+    codepen = "rbxassetid://10709810534",
+    codesandbox = "rbxassetid://10709810676",
+    coffee = "rbxassetid://10709810814",
+    cog = "rbxassetid://10709810948",
+    coins = "rbxassetid://10709811110",
+    columns = "rbxassetid://10709811261",
+    command = "rbxassetid://10709811365",
+    compass = "rbxassetid://10709811445",
+    component = "rbxassetid://10709811595",
+    conciergebell = "rbxassetid://10709811706",
+    connection = "rbxassetid://10747361219",
+    contact = "rbxassetid://10709811834",
+    contrast = "rbxassetid://10709811939",
+    cookie = "rbxassetid://10709812067",
+    copy = "rbxassetid://10709812159",
+    copyleft = "rbxassetid://10709812251",
+    copyright = "rbxassetid://10709812311",
+    cornerdownleft = "rbxassetid://10709812396",
+    cornerdownright = "rbxassetid://10709812485",
+    cornerleftdown = "rbxassetid://10709812632",
+    cornerleftup = "rbxassetid://10709812784",
+    cornerrightdown = "rbxassetid://10709812939",
+    cornerrightup = "rbxassetid://10709813094",
+    cornerupleft = "rbxassetid://10709813185",
+    cornerupright = "rbxassetid://10709813281",
+    cpu = "rbxassetid://10709813383",
+    croissant = "rbxassetid://10709818125",
+    crop = "rbxassetid://10709818245",
+    cross = "rbxassetid://10709818399",
+    crosshair = "rbxassetid://10709818534",
+    crown = "rbxassetid://10709818626",
+    cupsoda = "rbxassetid://10709818763",
+    curlybraces = "rbxassetid://10709818847",
+    currency = "rbxassetid://10709818931",
+    database = "rbxassetid://10709818996",
+    delete = "rbxassetid://10709819059",
+    diamond = "rbxassetid://10709819149",
+    dice1 = "rbxassetid://10709819266",
+    dice2 = "rbxassetid://10709819361",
+    dice3 = "rbxassetid://10709819508",
+    dice4 = "rbxassetid://10709819670",
+    dice5 = "rbxassetid://10709819801",
+    dice6 = "rbxassetid://10709819896",
+    dices = "rbxassetid://10723343321",
+    diff = "rbxassetid://10723343416",
+    disc = "rbxassetid://10723343537",
+    divide = "rbxassetid://10723343805",
+    dividecircle = "rbxassetid://10723343636",
+    dividesquare = "rbxassetid://10723343737",
+    dollarsign = "rbxassetid://10723343958",
+    download = "rbxassetid://10723344270",
+    downloadcloud = "rbxassetid://10723344088",
+    droplet = "rbxassetid://10723344432",
+    droplets = "rbxassetid://10734883356",
+    drumstick = "rbxassetid://10723344737",
+    edit = "rbxassetid://10734883598",
+    edit2 = "rbxassetid://10723344885",
+    edit3 = "rbxassetid://10723345088",
+    egg = "rbxassetid://10723345518",
+    eggfried = "rbxassetid://10723345347",
+    electricity = "rbxassetid://10723345749",
+    electricityoff = "rbxassetid://10723345643",
+    equal = "rbxassetid://10723345990",
+    equalnot = "rbxassetid://10723345866",
+    eraser = "rbxassetid://10723346158",
+    euro = "rbxassetid://10723346372",
+    expand = "rbxassetid://10723346553",
+    externallink = "rbxassetid://10723346684",
+    eye = "rbxassetid://10723346959",
+    eyeoff = "rbxassetid://10723346871",
+    factory = "rbxassetid://10723347051",
+    fan = "rbxassetid://10723354359",
+    fastforward = "rbxassetid://10723354521",
+    feather = "rbxassetid://10723354671",
+    figma = "rbxassetid://10723354801",
+    file = "rbxassetid://10723374641",
+    filearchive = "rbxassetid://10723354921",
+    fileaudio = "rbxassetid://10723355148",
+    fileaudio2 = "rbxassetid://10723355026",
+    fileaxis3d = "rbxassetid://10723355272",
+    filebadge = "rbxassetid://10723355622",
+    filebadge2 = "rbxassetid://10723355451",
+    filebarchart = "rbxassetid://10723355887",
+    filebarchart2 = "rbxassetid://10723355746",
+    filebox = "rbxassetid://10723355989",
+    filecheck = "rbxassetid://10723356210",
+    filecheck2 = "rbxassetid://10723356100",
+    fileclock = "rbxassetid://10723356329",
+    filecode = "rbxassetid://10723356507",
+    filecog = "rbxassetid://10723356830",
+    filecog2 = "rbxassetid://10723356676",
+    filediff = "rbxassetid://10723357039",
+    filedigit = "rbxassetid://10723357151",
+    filedown = "rbxassetid://10723357322",
+    fileedit = "rbxassetid://10723357495",
+    fileheart = "rbxassetid://10723357637",
+    fileimage = "rbxassetid://10723357790",
+    fileinput = "rbxassetid://10723357933",
+    filejson = "rbxassetid://10723364435",
+    filejson2 = "rbxassetid://10723364361",
+    filekey = "rbxassetid://10723364605",
+    filekey2 = "rbxassetid://10723364515",
+    filelinechart = "rbxassetid://10723364725",
+    filelock = "rbxassetid://10723364957",
+    filelock2 = "rbxassetid://10723364861",
+    fileminus = "rbxassetid://10723365254",
+    fileminus2 = "rbxassetid://10723365086",
+    fileoutput = "rbxassetid://10723365457",
+    filepiechart = "rbxassetid://10723365598",
+    fileplus = "rbxassetid://10723365877",
+    fileplus2 = "rbxassetid://10723365766",
+    filequestion = "rbxassetid://10723365987",
+    filescan = "rbxassetid://10723366167",
+    filesearch = "rbxassetid://10723366550",
+    filesearch2 = "rbxassetid://10723366340",
+    filesignature = "rbxassetid://10723366741",
+    filespreadsheet = "rbxassetid://10723366962",
+    filesymlink = "rbxassetid://10723367098",
+    fileterminal = "rbxassetid://10723367244",
+    filetext = "rbxassetid://10723367380",
+    filetype = "rbxassetid://10723367606",
+    filetype2 = "rbxassetid://10723367509",
+    fileup = "rbxassetid://10723367734",
+    filevideo = "rbxassetid://10723373884",
+    filevideo2 = "rbxassetid://10723367834",
+    filevolume = "rbxassetid://10723374172",
+    filevolume2 = "rbxassetid://10723374030",
+    filewarning = "rbxassetid://10723374276",
+    filex = "rbxassetid://10723374544",
+    filex2 = "rbxassetid://10723374378",
+    files = "rbxassetid://10723374759",
+    film = "rbxassetid://10723374981",
+    filter = "rbxassetid://10723375128",
+    fingerprint = "rbxassetid://10723375250",
+    flag = "rbxassetid://10723375890",
+    flagoff = "rbxassetid://10723375443",
+    flagtriangleleft = "rbxassetid://10723375608",
+    flagtriangleright = "rbxassetid://10723375727",
+    flame = "rbxassetid://10723376114",
+    flashlight = "rbxassetid://10723376471",
+    flashlightoff = "rbxassetid://10723376365",
+    flaskconical = "rbxassetid://10734883986",
+    flaskround = "rbxassetid://10723376614",
+    fliphorizontal = "rbxassetid://10723376884",
+    fliphorizontal2 = "rbxassetid://10723376745",
+    flipvertical = "rbxassetid://10723377138",
+    flipvertical2 = "rbxassetid://10723377026",
+    flower = "rbxassetid://10747830374",
+    flower2 = "rbxassetid://10723377305",
+    focus = "rbxassetid://10723377537",
+    folder = "rbxassetid://10723387563",
+    folderarchive = "rbxassetid://10723384478",
+    foldercheck = "rbxassetid://10723384605",
+    folderclock = "rbxassetid://10723384731",
+    folderclosed = "rbxassetid://10723384893",
+    foldercog = "rbxassetid://10723385213",
+    foldercog2 = "rbxassetid://10723385036",
+    folderdown = "rbxassetid://10723385338",
+    folderedit = "rbxassetid://10723385445",
+    folderheart = "rbxassetid://10723385545",
+    folderinput = "rbxassetid://10723385721",
+    folderkey = "rbxassetid://10723385848",
+    folderlock = "rbxassetid://10723386005",
+    folderminus = "rbxassetid://10723386127",
+    folderopen = "rbxassetid://10723386277",
+    folderoutput = "rbxassetid://10723386386",
+    folderplus = "rbxassetid://10723386531",
+    foldersearch = "rbxassetid://10723386787",
+    foldersearch2 = "rbxassetid://10723386674",
+    foldersymlink = "rbxassetid://10723386930",
+    foldertree = "rbxassetid://10723387085",
+    folderup = "rbxassetid://10723387265",
+    folderx = "rbxassetid://10723387448",
+    folders = "rbxassetid://10723387721",
+    forminput = "rbxassetid://10723387841",
+    forward = "rbxassetid://10723388016",
+    frame = "rbxassetid://10723394389",
+    framer = "rbxassetid://10723394565",
+    frown = "rbxassetid://10723394681",
+    fuel = "rbxassetid://10723394846",
+    functionsquare = "rbxassetid://10723395041",
+    gamepad = "rbxassetid://10723395457",
+    gamepad2 = "rbxassetid://10723395215",
+    gauge = "rbxassetid://10723395708",
+    gavel = "rbxassetid://10723395896",
+    gem = "rbxassetid://10723396000",
+    ghost = "rbxassetid://10723396107",
+    gift = "rbxassetid://10723396402",
+    giftcard = "rbxassetid://10723396225",
+    gitbranch = "rbxassetid://10723396676",
+    gitbranchplus = "rbxassetid://10723396542",
+    gitcommit = "rbxassetid://10723396812",
+    gitcompare = "rbxassetid://10723396954",
+    gitfork = "rbxassetid://10723397049",
+    gitmerge = "rbxassetid://10723397165",
+    gitpullrequest = "rbxassetid://10723397431",
+    gitpullrequestclosed = "rbxassetid://10723397268",
+    gitpullrequestdraft = "rbxassetid://10734884302",
+    glass = "rbxassetid://10723397788",
+    glass2 = "rbxassetid://10723397529",
+    glasswater = "rbxassetid://10723397678",
+    glasses = "rbxassetid://10723397895",
+    globe = "rbxassetid://10723404337",
+    globe2 = "rbxassetid://10723398002",
+    grab = "rbxassetid://10723404472",
+    graduationcap = "rbxassetid://10723404691",
+    grape = "rbxassetid://10723404822",
+    grid = "rbxassetid://10723404936",
+    griphorizontal = "rbxassetid://10723405089",
+    gripvertical = "rbxassetid://10723405236",
+    hammer = "rbxassetid://10723405360",
+    hand = "rbxassetid://10723405649",
+    handmetal = "rbxassetid://10723405508",
+    harddrive = "rbxassetid://10723405749",
+    hardhat = "rbxassetid://10723405859",
+    hash = "rbxassetid://10723405975",
+    haze = "rbxassetid://10723406078",
+    headphones = "rbxassetid://10723406165",
+    heart = "rbxassetid://10723406885",
+    heartcrack = "rbxassetid://10723406299",
+    hearthandshake = "rbxassetid://10723406480",
+    heartoff = "rbxassetid://10723406662",
+    heartpulse = "rbxassetid://10723406795",
+    helpcircle = "rbxassetid://10723406988",
+    hexagon = "rbxassetid://10723407092",
+    highlighter = "rbxassetid://10723407192",
+    history = "rbxassetid://10723407335",
+    home = "rbxassetid://10723407389",
+    hourglass = "rbxassetid://10723407498",
+    icecream = "rbxassetid://10723414308",
+    image = "rbxassetid://10723415040",
+    imageminus = "rbxassetid://10723414487",
+    imageoff = "rbxassetid://10723414677",
+    imageplus = "rbxassetid://10723414827",
+    import = "rbxassetid://10723415205",
+    inbox = "rbxassetid://10723415335",
+    indent = "rbxassetid://10723415494",
+    indianrupee = "rbxassetid://10723415642",
+    infinity = "rbxassetid://10723415766",
+    info = "rbxassetid://10723415903",
+    inspect = "rbxassetid://10723416057",
+    italic = "rbxassetid://10723416195",
+    japaneseyen = "rbxassetid://10723416363",
+    joystick = "rbxassetid://10723416527",
+    key = "rbxassetid://10723416652",
+    keyboard = "rbxassetid://10723416765",
+    lamp = "rbxassetid://10723417513",
+    lampceiling = "rbxassetid://10723416922",
+    lampdesk = "rbxassetid://10723417016",
+    lampfloor = "rbxassetid://10723417131",
+    lampwalldown = "rbxassetid://10723417240",
+    lampwallup = "rbxassetid://10723417356",
+    landmark = "rbxassetid://10723417608",
+    languages = "rbxassetid://10723417703",
+    laptop = "rbxassetid://10723423881",
+    laptop2 = "rbxassetid://10723417797",
+    lasso = "rbxassetid://10723424235",
+    lassoselect = "rbxassetid://10723424058",
+    laugh = "rbxassetid://10723424372",
+    layers = "rbxassetid://10723424505",
+    layout = "rbxassetid://10723425376",
+    layoutdashboard = "rbxassetid://10723424646",
+    layoutgrid = "rbxassetid://10723424838",
+    layoutlist = "rbxassetid://10723424963",
+    layouttemplate = "rbxassetid://10723425187",
+    leaf = "rbxassetid://10723425539",
+    library = "rbxassetid://10723425615",
+    lifebuoy = "rbxassetid://10723425685",
+    lightbulb = "rbxassetid://10723425852",
+    lightbulboff = "rbxassetid://10723425762",
+    linechart = "rbxassetid://10723426393",
+    link = "rbxassetid://10723426722",
+    link2 = "rbxassetid://10723426595",
+    link2off = "rbxassetid://10723426513",
+    list = "rbxassetid://10723433811",
+    listchecks = "rbxassetid://10734884548",
+    listend = "rbxassetid://10723426886",
+    listminus = "rbxassetid://10723426986",
+    listmusic = "rbxassetid://10723427081",
+    listordered = "rbxassetid://10723427199",
+    listplus = "rbxassetid://10723427334",
+    liststart = "rbxassetid://10723427494",
+    listvideo = "rbxassetid://10723427619",
+    listx = "rbxassetid://10723433655",
+    loader = "rbxassetid://10723434070",
+    loader2 = "rbxassetid://10723433935",
+    locate = "rbxassetid://10723434557",
+    locatefixed = "rbxassetid://10723434236",
+    locateoff = "rbxassetid://10723434379",
+    lock = "rbxassetid://10723434711",
+    login = "rbxassetid://10723434830",
+    logout = "rbxassetid://10723434906",
+    luggage = "rbxassetid://10723434993",
+    magnet = "rbxassetid://10723435069",
+    mail = "rbxassetid://10734885430",
+    mailcheck = "rbxassetid://10723435182",
+    mailminus = "rbxassetid://10723435261",
+    mailopen = "rbxassetid://10723435342",
+    mailplus = "rbxassetid://10723435443",
+    mailquestion = "rbxassetid://10723435515",
+    mailsearch = "rbxassetid://10734884739",
+    mailwarning = "rbxassetid://10734885015",
+    mailx = "rbxassetid://10734885247",
+    mails = "rbxassetid://10734885614",
+    map = "rbxassetid://10734886202",
+    mappin = "rbxassetid://10734886004",
+    mappinoff = "rbxassetid://10734885803",
+    maximize = "rbxassetid://10734886735",
+    maximize2 = "rbxassetid://10734886496",
+    medal = "rbxassetid://10734887072",
+    megaphone = "rbxassetid://10734887454",
+    megaphoneoff = "rbxassetid://10734887311",
+    meh = "rbxassetid://10734887603",
+    menu = "rbxassetid://10734887784",
+    messagecircle = "rbxassetid://10734888000",
+    messagesquare = "rbxassetid://10734888228",
+    mic = "rbxassetid://10734888864",
+    mic2 = "rbxassetid://10734888430",
+    micoff = "rbxassetid://10734888646",
+    microscope = "rbxassetid://10734889106",
+    microwave = "rbxassetid://10734895076",
+    milestone = "rbxassetid://10734895310",
+    minimize = "rbxassetid://10734895698",
+    minimize2 = "rbxassetid://10734895530",
+    minus = "rbxassetid://10734896206",
+    minuscircle = "rbxassetid://10734895856",
+    minussquare = "rbxassetid://10734896029",
+    monitor = "rbxassetid://10734896881",
+    monitoroff = "rbxassetid://10734896360",
+    monitorspeaker = "rbxassetid://10734896512",
+    moon = "rbxassetid://10734897102",
+    morehorizontal = "rbxassetid://10734897250",
+    morevertical = "rbxassetid://10734897387",
+    mountain = "rbxassetid://10734897956",
+    mountainsnow = "rbxassetid://10734897665",
+    mouse = "rbxassetid://10734898592",
+    mousepointer = "rbxassetid://10734898476",
+    mousepointer2 = "rbxassetid://10734898194",
+    mousepointerclick = "rbxassetid://10734898355",
+    move = "rbxassetid://10734900011",
+    move3d = "rbxassetid://10734898756",
+    movediagonal = "rbxassetid://10734899164",
+    movediagonal2 = "rbxassetid://10734898934",
+    movehorizontal = "rbxassetid://10734899414",
+    movevertical = "rbxassetid://10734899821",
+    music = "rbxassetid://10734905958",
+    music2 = "rbxassetid://10734900215",
+    music3 = "rbxassetid://10734905665",
+    music4 = "rbxassetid://10734905823",
+    navigation = "rbxassetid://10734906744",
+    navigation2 = "rbxassetid://10734906332",
+    navigation2off = "rbxassetid://10734906144",
+    navigationoff = "rbxassetid://10734906580",
+    network = "rbxassetid://10734906975",
+    newspaper = "rbxassetid://10734907168",
+    octagon = "rbxassetid://10734907361",
+    option = "rbxassetid://10734907649",
+    outdent = "rbxassetid://10734907933",
+    package = "rbxassetid://10734909540",
+    package2 = "rbxassetid://10734908151",
+    packagecheck = "rbxassetid://10734908384",
+    packageminus = "rbxassetid://10734908626",
+    packageopen = "rbxassetid://10734908793",
+    packageplus = "rbxassetid://10734909016",
+    packagesearch = "rbxassetid://10734909196",
+    packagex = "rbxassetid://10734909375",
+    paintbucket = "rbxassetid://10734909847",
+    paintbrush = "rbxassetid://10734910187",
+    paintbrush2 = "rbxassetid://10734910030",
+    palette = "rbxassetid://10734910430",
+    palmtree = "rbxassetid://10734910680",
+    paperclip = "rbxassetid://10734910927",
+    partypopper = "rbxassetid://10734918735",
+    pause = "rbxassetid://10734919336",
+    pausecircle = "rbxassetid://10735024209",
+    pauseoctagon = "rbxassetid://10734919143",
+    pentool = "rbxassetid://10734919503",
+    pencil = "rbxassetid://10734919691",
+    percent = "rbxassetid://10734919919",
+    personstanding = "rbxassetid://10734920149",
+    phone = "rbxassetid://10734921524",
+    phonecall = "rbxassetid://10734920305",
+    phoneforwarded = "rbxassetid://10734920508",
+    phoneincoming = "rbxassetid://10734920694",
+    phonemissed = "rbxassetid://10734920845",
+    phoneoff = "rbxassetid://10734921077",
+    phoneoutgoing = "rbxassetid://10734921288",
+    piechart = "rbxassetid://10734921727",
+    piggybank = "rbxassetid://10734921935",
+    pin = "rbxassetid://10734922324",
+    pinoff = "rbxassetid://10734922180",
+    pipette = "rbxassetid://10734922497",
+    pizza = "rbxassetid://10734922774",
+    plane = "rbxassetid://10734922971",
+    play = "rbxassetid://10734923549",
+    playcircle = "rbxassetid://10734923214",
+    plus = "rbxassetid://10734924532",
+    pluscircle = "rbxassetid://10734923868",
+    plussquare = "rbxassetid://10734924219",
+    podcast = "rbxassetid://10734929553",
+    pointer = "rbxassetid://10734929723",
+    poundsterling = "rbxassetid://10734929981",
+    power = "rbxassetid://10734930466",
+    poweroff = "rbxassetid://10734930257",
+    printer = "rbxassetid://10734930632",
+    puzzle = "rbxassetid://10734930886",
+    quote = "rbxassetid://10734931234",
+    radio = "rbxassetid://10734931596",
+    radioreceiver = "rbxassetid://10734931402",
+    rectanglehorizontal = "rbxassetid://10734931777",
+    rectanglevertical = "rbxassetid://10734932081",
+    recycle = "rbxassetid://10734932295",
+    redo = "rbxassetid://10734932822",
+    redo2 = "rbxassetid://10734932586",
+    refreshccw = "rbxassetid://10734933056",
+    refreshcw = "rbxassetid://10734933222",
+    refrigerator = "rbxassetid://10734933465",
+    regex = "rbxassetid://10734933655",
+    ["repeat"] = "rbxassetid://10734933966",
+    repeat1 = "rbxassetid://10734933826",
+    reply = "rbxassetid://10734934252",
+    replyall = "rbxassetid://10734934132",
+    rewind = "rbxassetid://10734934347",
+    rocket = "rbxassetid://10734934585",
+    rockingchair = "rbxassetid://10734939942",
+    rotate3d = "rbxassetid://10734940107",
+    rotateccw = "rbxassetid://10734940376",
+    rotatecw = "rbxassetid://10734940654",
+    rss = "rbxassetid://10734940825",
+    ruler = "rbxassetid://10734941018",
+    russianruble = "rbxassetid://10734941199",
+    sailboat = "rbxassetid://10734941354",
+    save = "rbxassetid://10734941499",
+    scale = "rbxassetid://10734941912",
+    scale3d = "rbxassetid://10734941739",
+    scaling = "rbxassetid://10734942072",
+    scan = "rbxassetid://10734942565",
+    scanface = "rbxassetid://10734942198",
+    scanline = "rbxassetid://10734942351",
+    scissors = "rbxassetid://10734942778",
+    screenshare = "rbxassetid://10734943193",
+    screenshareoff = "rbxassetid://10734942967",
+    scroll = "rbxassetid://10734943448",
+    search = "rbxassetid://10734943674",
+    send = "rbxassetid://10734943902",
+    separatorhorizontal = "rbxassetid://10734944115",
+    separatorvertical = "rbxassetid://10734944326",
+    server = "rbxassetid://10734949856",
+    servercog = "rbxassetid://10734944444",
+    servercrash = "rbxassetid://10734944554",
+    serveroff = "rbxassetid://10734944668",
+    settings = "rbxassetid://10734950309",
+    settings2 = "rbxassetid://10734950020",
+    share = "rbxassetid://10734950813",
+    share2 = "rbxassetid://10734950553",
+    sheet = "rbxassetid://10734951038",
+    shield = "rbxassetid://10734951847",
+    shieldalert = "rbxassetid://10734951173",
+    shieldcheck = "rbxassetid://10734951367",
+    shieldclose = "rbxassetid://10734951535",
+    shieldoff = "rbxassetid://10734951684",
+    shirt = "rbxassetid://10734952036",
+    shoppingbag = "rbxassetid://10734952273",
+    shoppingcart = "rbxassetid://10734952479",
+    shovel = "rbxassetid://10734952773",
+    showerhead = "rbxassetid://10734952942",
+    shrink = "rbxassetid://10734953073",
+    shrub = "rbxassetid://10734953241",
+    shuffle = "rbxassetid://10734953451",
+    sidebar = "rbxassetid://10734954301",
+    sidebarclose = "rbxassetid://10734953715",
+    sidebaropen = "rbxassetid://10734954000",
+    sigma = "rbxassetid://10734954538",
+    signal = "rbxassetid://10734961133",
+    signalhigh = "rbxassetid://10734954807",
+    signallow = "rbxassetid://10734955080",
+    signalmedium = "rbxassetid://10734955336",
+    signalzero = "rbxassetid://10734960878",
+    siren = "rbxassetid://10734961284",
+    skipback = "rbxassetid://10734961526",
+    skipforward = "rbxassetid://10734961809",
+    skull = "rbxassetid://10734962068",
+    slack = "rbxassetid://10734962339",
+    slash = "rbxassetid://10734962600",
+    slice = "rbxassetid://10734963024",
+    sliders = "rbxassetid://10734963400",
+    slidershorizontal = "rbxassetid://10734963191",
+    smartphone = "rbxassetid://10734963940",
+    smartphonecharging = "rbxassetid://10734963671",
+    smile = "rbxassetid://10734964441",
+    smileplus = "rbxassetid://10734964188",
+    snowflake = "rbxassetid://10734964600",
+    sofa = "rbxassetid://10734964852",
+    sortasc = "rbxassetid://10734965115",
+    sortdesc = "rbxassetid://10734965287",
+    speaker = "rbxassetid://10734965419",
+    sprout = "rbxassetid://10734965572",
+    square = "rbxassetid://10734965702",
+    star = "rbxassetid://10734966248",
+    starhalf = "rbxassetid://10734965897",
+    staroff = "rbxassetid://10734966097",
+    stethoscope = "rbxassetid://10734966384",
+    sticker = "rbxassetid://10734972234",
+    stickynote = "rbxassetid://10734972463",
+    stopcircle = "rbxassetid://10734972621",
+    stretchhorizontal = "rbxassetid://10734972862",
+    stretchvertical = "rbxassetid://10734973130",
+    strikethrough = "rbxassetid://10734973290",
+    subscript = "rbxassetid://10734973457",
+    sun = "rbxassetid://10734974297",
+    sundim = "rbxassetid://10734973645",
+    sunmedium = "rbxassetid://10734973778",
+    sunmoon = "rbxassetid://10734973999",
+    sunsnow = "rbxassetid://10734974130",
+    sunrise = "rbxassetid://10734974522",
+    sunset = "rbxassetid://10734974689",
+    superscript = "rbxassetid://10734974850",
+    swissfranc = "rbxassetid://10734975024",
+    switchcamera = "rbxassetid://10734975214",
+    sword = "rbxassetid://10734975486",
+    swords = "rbxassetid://10734975692",
+    syringe = "rbxassetid://10734975932",
+    table = "rbxassetid://10734976230",
+    tablet = "rbxassetid://10734976394",
+    tag = "rbxassetid://10734976528",
+    tags = "rbxassetid://10734976739",
+    target = "rbxassetid://10734977012",
+    tent = "rbxassetid://10734981750",
+    terminal = "rbxassetid://10734982144",
+    terminalsquare = "rbxassetid://10734981995",
+    textcursor = "rbxassetid://10734982395",
+    textcursorinput = "rbxassetid://10734982297",
+    thermometer = "rbxassetid://10734983134",
+    thermometersnowflake = "rbxassetid://10734982571",
+    thermometersun = "rbxassetid://10734982771",
+    thumbsdown = "rbxassetid://10734983359",
+    thumbsup = "rbxassetid://10734983629",
+    ticket = "rbxassetid://10734983868",
+    timer = "rbxassetid://10734984606",
+    timeroff = "rbxassetid://10734984138",
+    timerreset = "rbxassetid://10734984355",
+    toggleleft = "rbxassetid://10734984834",
+    toggleright = "rbxassetid://10734985040",
+    tornado = "rbxassetid://10734985247",
+    toybrick = "rbxassetid://10747361919",
+    train = "rbxassetid://10747362105",
+    trash = "rbxassetid://10747362393",
+    trash2 = "rbxassetid://10747362241",
+    treedeciduous = "rbxassetid://10747362534",
+    treepine = "rbxassetid://10747362748",
+    trees = "rbxassetid://10747363016",
+    trendingdown = "rbxassetid://10747363205",
+    trendingup = "rbxassetid://10747363465",
+    triangle = "rbxassetid://10747363621",
+    trophy = "rbxassetid://10747363809",
+    truck = "rbxassetid://10747364031",
+    tv = "rbxassetid://10747364593",
+    tv2 = "rbxassetid://10747364302",
+    type = "rbxassetid://10747364761",
+    umbrella = "rbxassetid://10747364971",
+    underline = "rbxassetid://10747365191",
+    undo = "rbxassetid://10747365484",
+    undo2 = "rbxassetid://10747365359",
+    unlink = "rbxassetid://10747365771",
+    unlink2 = "rbxassetid://10747397871",
+    unlock = "rbxassetid://10747366027",
+    upload = "rbxassetid://10747366434",
+    uploadcloud = "rbxassetid://10747366266",
+    usb = "rbxassetid://10747366606",
+    user = "rbxassetid://10747373176",
+    usercheck = "rbxassetid://10747371901",
+    usercog = "rbxassetid://10747372167",
+    userminus = "rbxassetid://10747372346",
+    userplus = "rbxassetid://10747372702",
+    userx = "rbxassetid://10747372992",
+    users = "rbxassetid://10747373426",
+    utensils = "rbxassetid://10747373821",
+    utensilscrossed = "rbxassetid://10747373629",
+    venetianmask = "rbxassetid://10747374003",
+    verified = "rbxassetid://10747374131",
+    vibrate = "rbxassetid://10747374489",
+    vibrateoff = "rbxassetid://10747374269",
+    video = "rbxassetid://10747374938",
+    videooff = "rbxassetid://10747374721",
+    view = "rbxassetid://10747375132",
+    voicemail = "rbxassetid://10747375281",
+    volume = "rbxassetid://10747376008",
+    volume1 = "rbxassetid://10747375450",
+    volume2 = "rbxassetid://10747375679",
+    volumex = "rbxassetid://10747375880",
+    wallet = "rbxassetid://10747376205",
+    wand = "rbxassetid://10747376565",
+    wand2 = "rbxassetid://10747376349",
+    watch = "rbxassetid://10747376722",
+    waves = "rbxassetid://10747376931",
+    webcam = "rbxassetid://10747381992",
+    wifi = "rbxassetid://10747382504",
+    wifioff = "rbxassetid://10747382268",
+    wind = "rbxassetid://10747382750",
+    wraptext = "rbxassetid://10747383065",
+    wrench = "rbxassetid://10747383470",
+    x = "rbxassetid://10747384394",
+    xcircle = "rbxassetid://10747383819",
+    xoctagon = "rbxassetid://10747384037",
+    xsquare = "rbxassetid://10747384217",
+    zoomin = "rbxassetid://10747384552",
+    zoomout = "rbxassetid://10747384679",
+  }
+end
+
+local v1 = {
+  Themes = {
+    Darker = {
+      ["Color Hub 1"] = ColorSequence.new({
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)),
+        ColorSequenceKeypoint.new(0.5, Color3.fromRGB(0, 0, 0)),
+        ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 0)),
+      }),
+      ["Color Hub 2"] = Color3.fromRGB(0, 0, 0),
+      ["Color Stroke"] = Color3.fromRGB(0, 0, 0),
+      ["Color Theme"] = Color3.fromRGB(0, 0, 0),
+      ["Color Text"] = Color3.fromRGB(255, 255, 255),
+      ["Color Dark Text"] = Color3.fromRGB(255, 255, 255),
+    },
+    Dark = {
+      ["Color Hub 1"] = ColorSequence.new({
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)),
+        ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 0)),
+      }),
+      ["Color Hub 2"] = Color3.fromRGB(0, 0, 0),
+      ["Color Stroke"] = Color3.fromRGB(0, 0, 0),
+      ["Color Theme"] = Color3.fromRGB(0, 0, 0),
+      ["Color Text"] = Color3.fromRGB(255, 255, 255),
+      ["Color Dark Text"] = Color3.fromRGB(255, 255, 255),
+    },
+    Blue = {
+      ["Color Hub 1"] = ColorSequence.new({
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)),
+        ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 0)),
+      }),
+      ["Color Hub 2"] = Color3.fromRGB(0, 0, 0),
+      ["Color Stroke"] = Color3.fromRGB(0, 0, 0),
+      ["Color Theme"] = Color3.fromRGB(255, 255, 255),
+      ["Color Text"] = Color3.fromRGB(255, 255, 255),
+      ["Color Dark Text"] = Color3.fromRGB(255, 255, 255),
+      ["Color Dark Blue"] = Color3.fromRGB(255, 255, 255),
+      ["Color Hub 9"] = Color3.fromRGB(0, 0, 0),
+      ["Color Dark Cyan"] = Color3.fromRGB(255, 255, 255),
+    },
+  },
+  Info = { Version = "1.2.0" },
+  Save = { UISize = { 550, 380 }, TabSize = 160, Theme = "Blue" },
+  Settings = {},
+  Connection = {},
+  Instances = {},
+  Elements = {},
+  Options = {},
+  Flags = {},
+  Tabs = {},
+  Icons = f1(),
+}
+
+local viewportSize = workspace.CurrentCamera.ViewportSize
+local v2 = viewportSize.Y / 450
+local v3 = v1.Settings
+local flags = v1.Flags
+local f2, f3
+
+local function f4(...)
+  local v4 = { ... }
+
+  if type(v4) ~= "table" then
+    return
+  else
+    local instance = Instance.new(v4[1])
+
+    if type(v4[2]) == "table" then
+      f2(instance, v4[2])
+      f3(instance, v4[3])
+    elseif typeof(v4[2]) == "Instance" then
+      instance.Parent = v4[2]
+      f2(instance, v4[3])
+      f3(instance, v4[4])
+    end
+
+    return instance
+  end
+end
+
+local function f5(p1, p2)
+  table.insert(v1.Instances, { Instance = p1, Type = p2 })
+  return p1
+end
+
+function f3(p3, p4)
+  if p4 then
+    table.foreach(p4, function(p5, p6) p6.Parent = p3 end)
+  end
+
+  return p3
+end
+
+function f2(p7, p8)
+  if p8 then
+    table.foreach(p8, function(key, p9) p7[key] = p9 end)
+  end
+
+  return p7
+end
+
+local v5 = {}
+
+function v5:InsertCallback(p10, p11)
+  if type(p11) == "function" then
+    table.insert(p10, p11)
+  end
+
+  return p11
+end
+
+function v5:FireCallback(p12, ...)
+  for index, value in ipairs(p12) do
+    if type(value) == "function" then
+      task.spawn(value, ...)
+    end
+  end
+end
+
+function v5:ToggleVisible(p13, p14)
+  p13.Visible = p14 ~= nil and p14 or p13.Visible
+end
+
+function v5:ToggleParent(p15, p16)
+  if Bool ~= nil then
+    p15.Parent = Bool
+  else
+    p15.Parent = not p15.Parent and p16
+  end
+end
+
+function v5:GetConnectionFunctions(p17, p18)
+  local v6 = { Function = p18, Connected = true }
+
+  function v6:Disconnect()
+    if self.Connected then
+      table.remove(p17, table.find(p17, self.Function))
+      self.Connected = false
+    end
+  end
+
+  function v6.Fire(p19, ...)
+    if p19.Connected then
+      task.spawn(p19.Function, ...)
+    end
+  end
+
+  return v6
+end
+
+function v5:GetCallback(p20, key2)
+  local callback = p20[key2] or p20.Callback or function() end
+
+  if type(callback) == "table" then
+    return { function(p21) callback[1][callback[2]] = p21 end }
+  end
+
+  return { callback }
+end
+
+local connection = v1.Connection
+local v7 = {}
+
+local function f6(p22)
+  if type(p22) ~= "table" then
+    return
+  end
+
+  for index2, value2 in ipairs(p22) do
+    local v8 = {}
+    local v9 = {}
+    connection[value2] = v9
+    v7[value2] = v8
+
+    v9.Name = value2
+
+    function v9:Connect(p23)
+      if type(p23) == "function" then
+        table.insert(v8, p23)
+        return v5:GetConnectionFunctions(v8, p23)
+      end
+    end
+
+    function v9.Once(p24, p25)
+      local getConnectionFunctions
+
+      if type(p25) == "function" then
+        getConnectionFunctions = nil
+
+        getConnectionFunctions = v5:GetConnectionFunctions(v8, function(...)
+          task.spawn(p25, ...)
+          getConnectionFunctions:Disconnect()
+        end)
+
+        return getConnectionFunctions
+      end
+    end
+  end
+end
+
+function connection:FireConnection(key3, ...)
+  for key4, value3 in pairs(type(key3) == "string" and v7[key3] or v7[key3.Name]) do
+    task.spawn(value3, ...)
+  end
+end
+
+f6({ "FlagsChanged", "ThemeChanged", "FileSaved", "ThemeChanging", "OptionAdded" })
+
+local function f7(flag)
+  return type(flag) == "string" and flags[flag]
+end
+
+local function f8(flag2, default)
+  if flag2 and (default ~= flags[flag2] or type(default) == "table") then
+    flags[flag2] = default
+    connection:FireConnection("FlagsChanged", flag2, default)
+  end
+end
+
+local function f9(flag3)
+  return type(flag3) == "string" and flags[flag3] ~= nil
+end
+
+local v10
+
+connection.FlagsChanged:Connect(function(p26, p27)
+  local scriptFile = v3.ScriptFile
+
+  if not v10 and scriptFile and writefile then
+    v10 = true
+    task.wait(0.1)
+    v10 = false
+    local v11, v12 = pcall(function() return httpService:JSONEncode(flags) end)
+
+    if v11 then
+      if pcall(writefile, scriptFile, v12) then
+        connection:FireConnection("FileSaved", "Script-Flags", scriptFile, v12)
+      end
+    end
+  end
+end)
+
+local v13 = f4("ScreenGui", coreGui, { Name = "redz Library V5" }, {
+  f4("UIScale", { Scale = v2, Name = "Scale" }),
+})
+
+local instance2 = Instance.new("Sound", v13)
+instance2.SoundId = "rbxassetid://1412830636"
+instance2.Volume = 0.5
+
+local function f10()
+  instance2:Play()
+end
+
+task.spawn(function()
+  task.wait(2)
+
+  for key5, value4 in pairs(v13:GetDescendants()) do
+    if value4:IsA("TextButton") or value4:IsA("ImageButton") then
+      value4.Activated:Connect(f10)
+    end
+  end
+
+  v13.DescendantAdded:Connect(function(descendant)
+    if descendant:IsA("TextButton") or descendant:IsA("ImageButton") then
+      task.wait(0.1)
+      descendant.Activated:Connect(f10)
+    end
+  end)
+end)
+
+local findFirstChild = coreGui:FindFirstChild(v13.Name)
+
+if findFirstChild and findFirstChild ~= v13 then
+  findFirstChild:Destroy()
+end
+
+local function f11(p28, fn)
+  p28.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1
+      or input.UserInputType == Enum.UserInputType.Touch then
+      while true do
+        if not userInputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) then
+          break
+        end
+
+        task.wait()
+      end
+    end
+
+    fn()
+  end)
+end
+
+local function f12(p29)
+  if type(p29) == "function" then
+    return p29()
+  end
+
+  return p29
+end
+
+local function f13(p30)
+  for key6, value5 in pairs(v1.Themes) do
+    if key6 == p30 then
+      return true
+    end
+  end
+end
+
+local function f14(p31, save)
+  if writefile then
+    writefile(p31, (httpService:JSONEncode(save)))
+  end
+end
+
+local f15
+
+local function f16(p32)
+  task.spawn(function()
+    f2(p32, { Active = true, AutoButtonColor = false })
+    local position, position2
+
+    local function f17(input2)
+      local v14 = input2.Position - position
+
+      f15({
+        p32, "Position",
+        UDim2.new(
+          position2.X.Scale, position2.X.Offset + v14.X / v2, position2.Y.Scale,
+          position2.Y.Offset + v14.Y / v2
+        ),
+        0.35,
+      })
+    end
+
+    local v15
+
+    p32.MouseButton1Down:Connect(function() v15 = true end)
+
+    p32.InputBegan:Connect(function(input3)
+      if input3.UserInputType == Enum.UserInputType.MouseButton1
+        or input3.UserInputType == Enum.UserInputType.Touch then
+        position2 = p32.Position
+        position = input3.Position
+
+        while true do
+          if not userInputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) then
+            break
+          end
+
+          runService.Heartbeat:Wait()
+
+          if v15 then
+            f17(input3)
+          end
+        end
+
+        v15 = false
+      end
+    end)
+  end)
+
+  return p32
+end
+
+function f15(p33)
+  local instance3 = p33[1] or p33.Instance
+  local prop = p33[2] or p33.Prop
+  local newVal = p33[3] or p33.NewVal
+  local v16 = p33[4] or p33.Time or 0.5
+  local v17 = p33[5] or p33.wait or false
+
+  local create = tweenService:Create(instance3, TweenInfo.new(v16, Enum.EasingStyle.Quint), {
+    [prop] = newVal,
+  })
+
+  create:Play()
+
+  if v17 then
+    create.Completed:Wait()
+  end
+
+  return create
+end
+
+local v18 = v1.Themes[v1.Save.Theme]
+
+local function f18(key7, p34)
+  v1.Elements[key7] = p34
+end
+
+local function f19(key8, p35, udim, ...)
+  return (v1.Elements[key8](p35, udim, ...))
+end
+
+f18("Corner", function(p36, p37)
+  return (f2(f4("UICorner", p36, { CornerRadius = p37 or UDim.new(0, 7) }), props))
+end)
+
+f18("Stroke", function(p38, p39, ...)
+  local v19, v20 = ...
+
+  return (f5(f2(f4("UIStroke", p38, {
+    Color = v19 or v18["Color Stroke"],
+    Thickness = v20 or 1,
+    ApplyStrokeMode = "Border",
+  }), p39), "Stroke"))
+end)
+
+f18("Button", function(p40, p41, ...)
+  local v21 = ...
+
+  local v22 = f5(f2(f4("TextButton", p40, {
+    Text = "",
+    Size = UDim2.fromScale(1, 1),
+    BackgroundColor3 = v18["Color Hub 2"],
+    AutoButtonColor = false,
+  }), p41), "Frame")
+
+  local size = v22.Size
+  local v23 = false
+
+  v22.MouseEnter:Connect(function()
+    v23 = true
+    v22.BackgroundTransparency = 0.4
+  end)
+
+  v22.MouseLeave:Connect(function()
+    v23 = false
+    v22.BackgroundTransparency = 0
+  end)
+
+  v22.MouseButton1Down:Connect(function()
+    f15({ v22, "Size", size - UDim2.fromOffset(4, 2), 0.1 })
+    f15({ v22, "BackgroundTransparency", 0.6, 0.1 })
+  end)
+
+  v22.MouseButton1Up:Connect(function()
+    f15({ v22, "Size", size, 0.15 })
+    f15({ v22, "BackgroundTransparency", v23 and 0.4 or 0, 0.15 })
+  end)
+
+  if v21 then
+    v22.Activated:Connect(v21)
+  end
+
+  return v22
+end)
+
+f18("Gradient", function(p42, p43, ...)
+  return (f5(f2(f4("UIGradient", p42, { Color = v18["Color Hub 1"] }), p43), "Gradient"))
+end)
+
+local function f20(instance4)
+  if instance4:IsA("Frame") then
+    return "BackgroundColor3"
+  elseif instance4:IsA("ImageLabel") then
+    return "ImageColor3"
+  elseif instance4:IsA("TextLabel") then
+    return "TextColor3"
+  elseif instance4:IsA("ScrollingFrame") then
+    return "ScrollBarImageColor3"
+  else
+    if instance4:IsA("UIStroke") then
+      return "Color"
+    end
+
+    return ""
+  end
+end
+
+local function f21(p44, p45, p46, udim2)
+  local v24 = f5(f4("TextLabel", {
+    Font = Enum.Font.FredokaOne,
+    TextColor3 = v18["Color Text"],
+    Size = UDim2.new(1, -20),
+    AutomaticSize = "Y",
+    Position = UDim2.new(0, 0, 0.5),
+    AnchorPoint = Vector2.new(0, 0.5),
+    BackgroundTransparency = 1,
+    TextTruncate = "AtEnd",
+    TextSize = 10,
+    TextXAlignment = "Left",
+    Text = "",
+    RichText = true,
+  }), "Text")
+
+  local v25 = f5(f4("TextLabel", {
+    Font = Enum.Font.Gotham,
+    TextColor3 = v18["Color Dark Text"],
+    Size = UDim2.new(1, -20),
+    AutomaticSize = "Y",
+    Position = UDim2.new(0, 12, 0, 15),
+    BackgroundTransparency = 1,
+    TextWrapped = true,
+    TextSize = 8,
+    TextXAlignment = "Left",
+    Text = "",
+    RichText = true,
+  }), "DarkText")
+
+  local v26 = f19("Button", p44, {
+    Size = UDim2.new(1, 0, 0, 25),
+    AutomaticSize = "Y",
+    Name = "Option",
+  })
+
+  f19("Corner", v26, UDim.new(0, 6))
+
+  LabelHolder = f4("Frame", v26, {
+    AutomaticSize = "Y",
+    BackgroundTransparency = 1,
+    Size = udim2,
+    Position = UDim2.new(0, 10, 0),
+    AnchorPoint = Vector2.new(0, 0),
+  }, {
+    f4("UIListLayout", {
+      SortOrder = "LayoutOrder",
+      VerticalAlignment = "Center",
+      Padding = UDim.new(0, 2),
+    }),
+    f4("UIPadding", { PaddingBottom = UDim.new(0, 5), PaddingTop = UDim.new(0, 5) }), v24, v25,
+  })
+
+  local v27 = {}
+
+  function v27:SetTitle(text)
+    if type(text) == "string" and text:gsub(" ", ""):len() > 0 then
+      v24.Text = text
+    end
+  end
+
+  function v27:SetDesc(text2)
+    if type(text2) == "string" and text2:gsub(" ", ""):len() > 0 then
+      v25.Visible = true
+      v25.Text = text2
+
+      LabelHolder.Position = UDim2.new(0, 10, 0)
+      LabelHolder.AnchorPoint = Vector2.new(0, 0)
+    else
+      v25.Visible = false
+      v25.Text = ""
+
+      LabelHolder.Position = UDim2.new(0, 10, 0.5)
+      LabelHolder.AnchorPoint = Vector2.new(0, 0.5)
+    end
+  end
+
+  v27:SetTitle(p45)
+  v27:SetDesc(p46)
+
+  return v26, v27
+end
+
+function v1:GetIcon(p47)
+  if type(p47) ~= "string" or p47:find("rbxassetid://") or #p47 == 0 then
+    return p47
+  else
+    local v28 = nil
+    local gsub = string.lower(p47):gsub("lucide", ""):gsub("-", "")
+
+    for v29, v30 in self.Icons do
+      local gsub2 = v29:gsub("lucide", ""):gsub("-", "")
+
+      if gsub2 == gsub then
+        return v30
+      end
+
+      if not v28 and gsub2:find(gsub, 1, true) then
+        v28 = v30
+      end
+    end
+
+    return v28 or gsub
+  end
+end
+
+function v1.SetTheme(p48, key9)
+  if not f13(key9) then
+    return
+  end
+
+  v1.Save.Theme = key9
+  f14("redz library V5.json", v1.Save)
+  v18 = v1.Themes[key9]
+  connection:FireConnection("ThemeChanged", key9)
+
+  table.foreach(v1.Instances, function(p49, p50)
+    if p50.Type == "Gradient" then
+      p50.Instance.Color = v18["Color Hub 1"]
+    elseif p50.Type == "Frame" then
+      p50.Instance.BackgroundColor3 = v18["Color Hub 2"]
+    elseif p50.Type == "Stroke" then
+      p50.Instance[f20(p50.Instance)] = v18["Color Stroke"]
+    elseif p50.Type == "Theme" then
+      p50.Instance[f20(p50.Instance)] = v18["Color Theme"]
+    elseif p50.Type == "Text" then
+      p50.Instance[f20(p50.Instance)] = v18["Color Text"]
+    elseif p50.Type == "DarkText" then
+      p50.Instance[f20(p50.Instance)] = v18["Color Dark Text"]
+    elseif p50.Type == "ScrollBar" then
+      p50.Instance[f20(p50.Instance)] = v18["Color Theme"]
+    end
+  end)
+end
+
+function v1.SetScale(p51, p52)
+  local v31 = viewportSize.Y / math.clamp(p52, 300, 2000)
+  local scale = v13.Scale
+  v2 = v31
+  scale.Scale = v31
+end
+
+local v32 = f4("Frame", v13, {
+  Name = "NotificationContainer",
+  Size = UDim2.new(0, 280, 1, 0),
+  Position = UDim2.new(1, -300, 1, -20),
+  AnchorPoint = Vector2.new(0, 1),
+  BackgroundTransparency = 1,
+  ZIndex = 999,
+}, {
+  f4("UIListLayout", {
+    SortOrder = "LayoutOrder",
+    Padding = UDim.new(0, 8),
+    VerticalAlignment = "Bottom",
+  }),
+})
+
+function v1.Notify(p53, p54)
+  local title = p54[1] or p54.Title or "Notification"
+  local description = p54[2] or p54.Description or p54.Text or ""
+  local duration = p54[3] or p54.Duration or 5
+  local v33 = p54.Type or "Info"
+  local image = p54.Image or "rbxassetid://113449060491896"
+
+  local v34 = {
+    Info = Color3.fromRGB(255, 255, 255),
+    Success = Color3.fromRGB(255, 255, 255),
+    Warning = Color3.fromRGB(255, 255, 255),
+    Error = Color3.fromRGB(255, 255, 255),
+  }
+
+  local info = v34[v33] or v34.Info
+
+  local v35 = f4("Frame", v32, {
+    Size = UDim2.new(1, 0, 0, 45),
+    BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+    BackgroundTransparency = 0,
+    BorderSizePixel = 0,
+    ClipsDescendants = true,
+  })
+
+  f19("Corner", v35, UDim.new(0, 12))
+
+  local v36 = f4("UIStroke", v35, {
+    Color = Color3.fromRGB(0, 0, 0),
+    Thickness = 2,
+    ApplyStrokeMode = "Border",
+  })
+
+  f4("TextLabel", v35, {
+    Size = UDim2.new(1, -50, 0, 16),
+    Position = UDim2.new(0, 44, 0, 4),
+    BackgroundTransparency = 1,
+    Text = title,
+    TextColor3 = Color3.fromRGB(255, 255, 255),
+    TextSize = 11,
+    Font = Enum.Font.GothamBold,
+    TextXAlignment = "Left",
+    TextTruncate = "AtEnd",
+  })
+
+  f4("TextLabel", v35, {
+    Size = UDim2.new(1, -50, 0, 20),
+    Position = UDim2.new(0, 44, 0, 15),
+    BackgroundTransparency = 1,
+    Text = description,
+    TextColor3 = Color3.fromRGB(255, 255, 255),
+    TextSize = 9,
+    Font = Enum.Font.Gotham,
+    TextXAlignment = "Left",
+    TextWrapped = true,
+  })
+
+  f4("ImageLabel", v35, {
+    Name = "NotificationIcon",
+    Size = UDim2.new(0, 16, 0, 16),
+    Position = UDim2.new(0, 6, 0.5, -20),
+    BackgroundTransparency = 1,
+    Image = image,
+    ZIndex = 1000,
+  })
+
+  local v37 = f4("TextLabel", v35, {
+    Size = UDim2.new(0, 30, 0, 16),
+    Position = UDim2.new(1, -35, 0, 4),
+    BackgroundTransparency = 1,
+    Text = tostring(duration),
+    TextColor3 = info,
+    TextSize = 10,
+    Font = Enum.Font.GothamBold,
+    TextXAlignment = "Right",
+  })
+
+  local function f22()
+    f15({ v35, "Position", UDim2.new(1, 50, v35.Position.Y.Scale, 0), 0.3 })
+    f15({ v35, "BackgroundTransparency", 1, 0.3 })
+    f15({ v36, "Transparency", 1, 0.3, true })
+
+    v35:Destroy()
+  end
+
+  v35.Position = UDim2.new(1, 50, 0, 0)
+  f15({ v35, "Position", UDim2.new(0, 0, 0, 0), 0.4 })
+  local v38
+
+  if duration > 0 then
+    v38 = duration
+
+    task.spawn(function()
+      while v38 > 0 do
+        task.wait(0.1)
+        v38 = v38 - 0.1
+
+        if v38 <= 0 then
+          v37.Text = "0.0"
+          task.wait(0.1)
+
+          if v35 and v35.Parent then
+            f22()
+          end
+
+          break
+        end
+
+        v37.Text = string.format("%.1f", v38)
+      end
+    end)
+  end
+
+  local v39 = {}
+
+  function v39.Remove(p55)
+    f22()
+  end
+
+  return v39
+end
+
+function v1.MakeWindow(p56, p57)
+  local name = p57[1] or p57.Name or p57.Title or "redz Library V5"
+  local subTitle = p57[2] or p57.SubTitle or "by : redz9999"
+  v3.ScriptFile = p57[3] or p57.SaveFolder or false
+
+  local function f23()
+    local scriptFile2 = v3.ScriptFile
+
+    if type(scriptFile2) ~= "string" then
+      return
+    end
+
+    local v40
+
+    if not readfile or not isfile then
+      return
+    else
+      local v41, v42 = pcall(isfile, scriptFile2)
+
+      if v41 and v42 then
+        local v43
+        v43, v40 = pcall(readfile, scriptFile2)
+
+        if v43 and type(v40) == "string" then
+          local v44, v45 = pcall(function() return httpService:JSONDecode(v40) end)
+          flags = v44 and v45 or {}
+        end
+      end
+
+      return
+    end
+  end
+
+  f23()
+
+  local v46, v47 = unpack(v1.Save.UISize)
+
+  local v48 = f5(f4("ImageButton", v13, {
+    Size = UDim2.fromOffset(v46, v47),
+    Position = UDim2.new(0.5, -v46 / 2, 0.5, -v47 / 2),
+    BackgroundTransparency = 1,
+    Name = "Hub",
+  }), "Main")
+
+  f19("Gradient", v48, { Rotation = 45 })
+  f16(v48)
+
+  f19("Corner", v48, UDim.new(0, 12))
+
+  f19("Corner", (f4("ImageLabel", v48, {
+    Name = "WindowBackground",
+    Size = UDim2.new(1, 0, 1, 0),
+    Position = UDim2.new(0, 0, 0, 0),
+    BackgroundTransparency = 1,
+    Image = "rbxassetid://99590358223294",
+    ImageTransparency = 0.2,
+    ScaleType = Enum.ScaleType.Crop,
+    ZIndex = 0,
+  })))
+
+  local v49 = f4("UIGradient", f4("UIStroke", v48, {
+    Color = Color3.fromRGB(255, 255, 255),
+    Thickness = 2.5,
+    ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
+  }), {
+    Color = ColorSequence.new({
+      ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+      ColorSequenceKeypoint.new(0.25, Color3.fromRGB(255, 255, 255)),
+      ColorSequenceKeypoint.new(0.5, Color3.fromRGB(5, 5, 10)),
+      ColorSequenceKeypoint.new(0.75, Color3.fromRGB(255, 255, 255)),
+      ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255)),
+    }),
+    Rotation = 0,
+  })
+
+  task.spawn(function()
+    while true do
+      v49.Rotation = v49.Rotation + 4
+
+      if v49.Rotation >= 360 then
+        v49.Rotation = 0
+      end
+
+      task.wait(0.03)
+    end
+  end)
+
+  f19("Gradient", v48, { Rotation = 45 })
+  f16(v48)
+  local v50 = f19("Corner", v48)
+
+  f4("Folder", v48, { Name = "Components" })
+  f4("Folder", v13, { Name = "Dropdown" })
+
+  f4("ImageLabel", v48, {
+    Name = "TopLeftGlow",
+    Size = UDim2.fromOffset(20, 20),
+    Position = UDim2.new(0, 2, 0, 0),
+    BackgroundTransparency = 1,
+    Image = "rbxassetid://134823243672451",
+    ImageTransparency = 0,
+    ZIndex = 10,
+  })
+
+  local v51 = f4("ImageLabel", v48, {
+    Name = "GlowCircle",
+    Size = UDim2.fromOffset(150, 150),
+    Position = UDim2.fromScale(0.5, 0.5),
+    AnchorPoint = Vector2.new(0.5, 0.5),
+    BackgroundTransparency = 1,
+    Image = "rbxassetid://116303622117109",
+    ImageTransparency = 0,
+    ZIndex = 0,
+  })
+
+  runService.Heartbeat:Connect(function(delta) v51.Rotation = v51.Rotation + 90 * delta end)
+  local v52 = f4("Folder", v48, { Name = "Components" })
+  local v53 = f4("Folder", v13, { Name = "Dropdown" })
+
+  local v54 = f4("Frame", v52, {
+    Size = UDim2.new(1, 0, 0, 28),
+    BackgroundTransparency = 1,
+    Name = "Top Bar",
+  })
+
+  local v55 = f5(f4("TextLabel", v54, {
+    Position = UDim2.new(0, 30, 0.5),
+    AnchorPoint = Vector2.new(0, 0.5),
+    AutomaticSize = "XY",
+    Text = '<font family="12187367066">' .. name .. "</font>",
+    RichText = true,
+    TextXAlignment = "Left",
+    TextSize = 12,
+    TextColor3 = v18["Color Text"],
+    BackgroundTransparency = 1,
+    Name = "Title",
+  }, {
+    f5(f4("TextLabel", {
+      Size = UDim2.fromScale(0, 1),
+      AutomaticSize = "X",
+      AnchorPoint = Vector2.new(0, 1),
+      Position = UDim2.new(1, 5, 0.9),
+      Text = '<font family="12187367066">' .. subTitle .. "</font>",
+      RichText = true,
+      TextColor3 = v18["Color Dark Text"],
+      BackgroundTransparency = 1,
+      TextXAlignment = "Left",
+      TextYAlignment = "Bottom",
+      TextSize = 8,
+      Name = "SubTitle",
+    }), "DarkText"),
+  }), "Text")
+
+  local v56 = f5(f4("ScrollingFrame", v52, {
+    Size = UDim2.new(0, v1.Save.TabSize, 1, -v54.Size.Y.Offset),
+    ScrollBarImageColor3 = v18["Color Theme"],
+    Position = UDim2.new(0, 0, 1, 0),
+    AnchorPoint = Vector2.new(0, 1),
+    ScrollBarThickness = 1.5,
+    BackgroundTransparency = 1,
+    ScrollBarImageTransparency = 0.2,
+    CanvasSize = UDim2.new(),
+    AutomaticCanvasSize = "Y",
+    ScrollingDirection = "Y",
+    BorderSizePixel = 0,
+    Name = "Tab Scroll",
+  }, {
+    f4("UIPadding", {
+      PaddingLeft = UDim.new(0, 10),
+      PaddingRight = UDim.new(0, 10),
+      PaddingTop = UDim.new(0, 10),
+      PaddingBottom = UDim.new(0, 10),
+    }),
+    f4("UIListLayout", { Padding = UDim.new(0, 5) }),
+  }), "ScrollBar")
+
+-- https://discord.gg/AwGHNh7Z7T
+  local v57 = f4("Frame", v52, {
+    Size = UDim2.new(1, -v56.Size.X.Offset, 1, -v54.Size.Y.Offset),
+    AnchorPoint = Vector2.new(1, 1),
+    Position = UDim2.new(1, 0, 1, 0),
+    BackgroundTransparency = 1,
+    ClipsDescendants = true,
+    Name = "Containers",
+  })
+
+  local v58 = f4("Frame", v57, {
+    Size = UDim2.new(1, 0, 1, 0),
+    BackgroundTransparency = 1,
+    Name = "ThemeParticles",
+    ZIndex = -5,
+    ClipsDescendants = true,
+  })
+
+  local v59 = {
+    MaxParticles = 60,
+    SpawnRate = 0.03,
+    ParticleSize = { Min = 1, Max = 1 },
+    ParticleSpeed = { Min = 1, Max = 1 },
+    ParticleLifetime = 3,
+  }
+
+  local v60 = {}
+  local v61 = 0
+
+  local function f24()
+    if #v60 >= v59.MaxParticles then
+      return
+    else
+      local absoluteSize = v58.AbsoluteSize
+      local v62 = math.random(10, absoluteSize.X - 10)
+      local v63 = math.random(v59.ParticleSize.Min, v59.ParticleSize.Max)
+      local v64 = math.random(v59.ParticleSpeed.Min, v59.ParticleSpeed.Max)
+      local color = Color3.fromRGB(255, 255, 255)
+
+      local v65 = f4("Frame", v58, {
+        Size = UDim2.fromOffset(v63, v63),
+        Position = UDim2.fromOffset(v62, absoluteSize.Y + 20),
+        BackgroundColor3 = color,
+        BackgroundTransparency = 0.05,
+        BorderSizePixel = 0,
+      })
+
+      f4("UICorner", v65, { CornerRadius = UDim.new(0.5, 0) })
+
+      local v66 = f4("Frame", v65, {
+        Size = UDim2.new(1, 12, 1, 12),
+        Position = UDim2.new(0.5, 0, 0.5, 0),
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        BackgroundColor3 = color,
+        BackgroundTransparency = 0.4,
+        ZIndex = -1,
+      })
+
+      f4("UICorner", v66, { CornerRadius = UDim.new(0.5, 0) })
+      local startTime = tick()
+      local vector = Vector2.new(0, -v64)
+      v65.BackgroundTransparency = 1
+      v66.BackgroundTransparency = 1
+
+      f15({ v65, "BackgroundTransparency", 0.05, 0.3 })
+      f15({ v66, "BackgroundTransparency", 0.4, 0.3 })
+
+      table.insert(v60, {
+        Frame = v65,
+        Glow = v66,
+        StartTime = startTime,
+        Speed = v64,
+        Direction = vector,
+        OriginalColor = color,
+      })
+
+      return
+    end
+  end
+
+  local function f25()
+    for i = #v60, 1, -1 do
+      local v67 = v60[i]
+      local v68 = tick() - v67.StartTime
+
+      if v68 >= v59.ParticleLifetime or v67.Frame.Position.Y.Offset < -20 then
+        f15({ v67.Frame, "BackgroundTransparency", 1, 0.2 })
+        f15({ v67.Glow, "BackgroundTransparency", 1, 0.2 })
+
+        task.spawn(function()
+          task.wait(0.2)
+
+          if v67.Frame and v67.Frame.Parent then
+            v67.Frame:Destroy()
+          end
+        end)
+
+        table.remove(v60, i)
+      else
+        local position3 = v67.Frame.Position
+
+        v67.Frame.Position = UDim2.fromOffset(
+          position3.X.Offset, position3.Y.Offset + v67.Direction.Y * 0.016
+        )
+
+        local v69 = v68 / v59.ParticleLifetime
+
+        if v69 > 0.6 then
+          v67.Frame.BackgroundTransparency = math.max(1 - 0.05 * (1 - (v69 - 0.6) / 0.4), 0.95)
+        end
+      end
+    end
+  end
+
+  local function f26()
+    if tick() - v61 >= v59.SpawnRate and v48.Visible then
+      f24()
+      v61 = tick()
+    end
+  end
+
+  local connect = runService.Heartbeat:Connect(function()
+    f25()
+    f26()
+  end)
+
+  local udim3 = UDim2.new(0, 35, 0, 35)
+  local vector2 = Vector2.new(0.8, 0.8)
+
+  local v70 = f16(f4("ImageButton", v48, {
+    Size = udim3,
+    Position = v48.Size,
+    Active = true,
+    AnchorPoint = vector2,
+    BackgroundTransparency = 1,
+    Name = "Control Hub Size",
+  }))
+
+  local v71 = f16(f4("ImageButton", v48, {
+    Size = UDim2.new(0, 20, 1, -30),
+    Position = UDim2.new(0, v56.Size.X.Offset, 1, 0),
+    AnchorPoint = Vector2.new(0.5, 1),
+    Active = true,
+    BackgroundTransparency = 1,
+    Name = "Control Tab Size",
+  }))
+
+  local function f27()
+    local position4 = v71.Position
+    local position5 = v70.Position
+
+    v70.Position = UDim2.fromOffset(
+      math.clamp(position5.X.Offset, 430, 1000), math.clamp(position5.Y.Offset, 200, 500)
+    )
+
+    v71.Position = UDim2.new(0, math.clamp(position4.X.Offset, 135, 250), 1, 0)
+    v56.Size = UDim2.new(0, v71.Position.X.Offset, 1, -v54.Size.Y.Offset)
+    v57.Size = UDim2.new(1, -v56.Size.X.Offset, 1, -v54.Size.Y.Offset)
+    v48.Size = v70.Position
+  end
+
+  v70:GetPropertyChangedSignal("Position"):Connect(f27)
+  v71:GetPropertyChangedSignal("Position"):Connect(f27)
+
+  f11(v70, function()
+    if not Minimized then
+      v1.Save.UISize = { v48.Size.X.Offset, v48.Size.Y.Offset }
+      f14("redz library V5.json", v1.Save)
+    end
+  end)
+
+  f11(v71, function()
+    v1.Save.TabSize = v56.Size.X.Offset
+    f14("redz library V5.json", v1.Save)
+  end)
+
+  local v72 = f4("Folder", v54, { Name = "Buttons" })
+
+  local v73 = f4("ImageButton", {
+    Size = UDim2.new(0, 21, 0, 21),
+    Position = UDim2.new(1, -10, 0.5),
+    AnchorPoint = Vector2.new(1, 0.5),
+    BackgroundTransparency = 1,
+    Image = "rbxassetid://108928547996184",
+    AutoButtonColor = false,
+    Name = "Close",
+  })
+
+  local v74 = f2(v73:Clone(), {
+    Position = UDim2.new(1, -35, 0.5),
+    Image = "rbxassetid://10734896206",
+    Name = "Minimize",
+  })
+
+  f3(v72, { v73, v74 })
+  local v75 = {}
+  local v76 = false
+
+  function v75.CloseBtn(p58)
+    v75:Dialog({
+      Title = "رسالة تأكيد",
+      Text = "هل تريد إغلاق السكربت ؟",
+      Options = { { "نعم", function() v13:Destroy() end }, { "لا" } },
+    })
+  end
+
+  local v77, size2, v78
+
+  function v75:MinimizeBtn()
+    if v78 then
+      return
+    end
+
+    v78 = true
+
+    if v77 then
+      v74.Image = "rbxassetid://10734896206"
+      f15({ v48, "Size", size2, 0.25, true })
+      v70.Visible = true
+      v71.Visible = true
+
+      for key10, value6 in pairs(v60) do
+        if value6.Frame and value6.Frame.Parent then
+          value6.Frame.Visible = true
+        end
+      end
+
+      v77 = false
+    else
+      v74.Image = "rbxassetid://10734924532"
+      size2 = v48.Size
+      v70.Visible = false
+      v71.Visible = false
+
+      for key11, value7 in pairs(v60) do
+        if value7.Frame and value7.Frame.Parent then
+          value7.Frame.Visible = false
+        end
+      end
+
+      f15({ v48, "Size", UDim2.fromOffset(v48.Size.X.Offset, 28), 0.25, true })
+      v77 = true
+    end
+
+    v78 = false
+  end
+
+  function v75.Minimize(p59)
+    v48.Visible = not v48.Visible
+  end
+
+  function v75.SetThemeParticles(p60, p61)
+    if p61 then
+      if not connect then
+        connect = runService.Heartbeat:Connect(function()
+          f25()
+          f26()
+        end)
+      end
+
+      v58.Visible = true
+    else
+      if connect then
+        connect:Disconnect()
+        connect = nil
+      end
+
+      v58.Visible = false
+    end
+  end
+
+  function v75.AddMinimizeButton(p62, p63)
+    local v79 = f16(f4("ImageButton", v13, {
+      Size = UDim2.fromOffset(12, 12),
+      Position = UDim2.fromScale(0.15, 0.15),
+      BackgroundTransparency = 1,
+      AutoButtonColor = false,
+    }))
+
+    local v80
+
+    if p63.Corner then
+      v80 = f19("Corner", v79)
+      f2(v80, p63.Corner)
+    end
+
+    local v81
+
+    if p63.Stroke then
+      v81 = f19("Stroke", v79)
+      f2(v81, p63.Stroke)
+    end
+
+    f2(v79, p63.Button)
+    v79.Activated:Connect(v75.Minimize)
+    return { Stroke = v81, Corner = v80, Button = v79 }
+  end
+
+  function v75.Set(p64, text3, text4)
+    if type(text3) == "string" and type(text4) == "string" then
+      v55.Text = text3
+      v55.SubTitle.Text = text4
+    elseif type(text3) == "string" then
+      v55.Text = text3
+    end
+  end
+
+  function v75:Dialog(p65)
+    local v82, v83, v84, v85, v86
+
+    if v48:FindFirstChild("Dialog") then
+      return
+    else
+      if v77 then
+        v75:MinimizeBtn()
+      end
+
+      local title2 = p65[1] or p65.Title or "Dialog"
+      local v87 = p65[2]
+
+      local text5 = v87
+      text5 = v87 or p65.Text or "This is a Dialog"
+
+      local v88 = p65[3]
+      local text6 = text5
+      local options = v88 or p65.Options or {}
+
+      v82 = f4("Frame", {
+        Active = true,
+        Size = UDim2.fromOffset(270, 162),
+        Position = UDim2.fromScale(0.5, 0.5),
+        AnchorPoint = Vector2.new(0.5, 0.5),
+      }, {
+        f5(f4("TextLabel", {
+          Font = Enum.Font.GothamBold,
+          Size = UDim2.new(1, 0, 0, 20),
+          Text = title2,
+          TextXAlignment = "Left",
+          TextColor3 = v18["Color Text"],
+          TextSize = 15,
+          Position = UDim2.fromOffset(15, 5),
+          BackgroundTransparency = 1,
+        }), "Text"),
+        f5(f4("TextLabel", {
+          Font = Enum.Font.GothamMedium,
+          Size = UDim2.new(1, -25),
+          AutomaticSize = "Y",
+          Text = text6,
+          TextXAlignment = "Left",
+          TextColor3 = v18["Color Dark Text"],
+          TextSize = 12,
+          Position = UDim2.fromOffset(15, 25),
+          BackgroundTransparency = 1,
+          TextWrapped = true,
+        }), "DarkText"),
+      })
+
+      f19("Gradient", v82, { Rotation = 270 })
+      f19("Corner", v82, UDim.new(0, 12))
+
+      v83 = f4("Frame", v82, {
+        Size = UDim2.fromScale(1, 0.35),
+        Position = UDim2.fromScale(0, 1),
+        AnchorPoint = Vector2.new(0, 1),
+        BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+        BackgroundTransparency = 1,
+      }, {
+        f4("UIListLayout", {
+          Padding = UDim.new(0, 10),
+          VerticalAlignment = "Center",
+          FillDirection = "Horizontal",
+          HorizontalAlignment = "Center",
+        }),
+      })
+
+      v84 = f5(f4("Frame", v48, {
+        BackgroundTransparency = 0.6,
+        Active = true,
+        BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+        Size = UDim2.new(1, 0, 1, 0),
+        BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+        Name = "Dialog",
+      }), "Stroke")
+
+      v50:Clone().Parent = v84
+      v82.Parent = v84
+
+      f15({ v82, "Size", UDim2.fromOffset(250, 150), 0.2 })
+      f15({ v82, "Transparency", 0, 0.15 })
+      f15({ v84, "Transparency", 0.3, 0.15 })
+
+      v85 = 1
+
+      v86 = {}
+
+      function v86:Button(p66)
+        local name2 = p66[1] or p66.Name or p66.Title or ""
+        local callback2 = p66[2] or p66.Callback or function() end
+        v85 = v85 + 1
+        local v89 = f19("Button", v83)
+        f19("Corner", v89, UDim.new(0, 6))
+
+        f2(v89, {
+          Text = name2,
+          Font = Enum.Font.GothamBold,
+          TextColor3 = v18["Color Text"],
+          TextSize = 12,
+        })
+
+        for key12, value8 in pairs(v83:GetChildren()) do
+          if value8:IsA("TextButton") then
+            value8.Size = UDim2.new(1 / v85, -((v85 - 1) * 20 / v85), 0, 32)
+          end
+        end
+
+        v89.Activated:Connect(v86.Close)
+        v89.Activated:Connect(callback2)
+      end
+
+      function v86.Close(p67)
+        f15({ v82, "Size", UDim2.fromOffset(270, 162), 0.2 })
+        f15({ v84, "Transparency", 1, 0.15 })
+        f15({ v82, "Transparency", 1, 0.15, true })
+
+        v84:Destroy()
+      end
+
+      table.foreach(options, function(p68, p69) v86:Button(p69) end)
+      return v86
+    end
+  end
+
+  function v75.SelectTab(p70, key13)
+    if type(key13) == "number" then
+      v1.Tabs[key13].func:Enable()
+    else
+      for key14, value9 in pairs(v1.Tabs) do
+        if value9.Cont == key13.Cont then
+          value9.func:Enable()
+        end
+      end
+    end
+  end
+
+  local v90 = {}
+
+  function v75.MakeTab(p71, p72, p73)
+    local v91 = p73
+
+    if type(p72) == "table" then
+      v91 = p72
+    end
+
+    local title3 = v91[1] or v91.Title or "Tab"
+    local getIcon = v1:GetIcon(v91[2] or v91.Icon or "")
+
+    if not getIcon:find("rbxassetid://") or getIcon:gsub("rbxassetid://", ""):len() < 6 then
+      getIcon = false
+    end
+
+    local v92 = f19("Button", v56, { Size = UDim2.new(1, 0, 0, 24) })
+    f19("Corner", v92, UDim.new(0, 6))
+
+    local v93 = f5(f4("TextLabel", v92, {
+      Size = UDim2.new(1, getIcon and -25 or -15, 1),
+      Position = UDim2.fromOffset(getIcon and 25 or 15),
+      BackgroundTransparency = 1,
+      Font = Enum.Font.BuilderSansBold,
+      Text = title3,
+      TextColor3 = v18["Color Text"],
+      TextSize = 10,
+      TextXAlignment = Enum.TextXAlignment.Left,
+      TextTransparency = v76 and 0.3 or 0,
+      TextTruncate = "AtEnd",
+    }), "Text")
+
+    local v94 = f5(f4("ImageLabel", v92, {
+      Position = UDim2.new(0, 8, 0.5),
+      Size = UDim2.new(0, 13, 0, 13),
+      AnchorPoint = Vector2.new(0, 0.5),
+      Image = getIcon or "",
+      BackgroundTransparency = 1,
+      ImageTransparency = v76 and 0.3 or 0,
+    }), "Text")
+
+    local v95 = f5(f4("Frame", v92, {
+      Size = v76 and UDim2.new(0, 4, 0, 4) or UDim2.new(0, 4, 0, 13),
+      Position = UDim2.new(0, 1, 0.5),
+      AnchorPoint = Vector2.new(0, 0.5),
+      BackgroundColor3 = v18["Color Theme"],
+      BackgroundTransparency = v76 and 1 or 0,
+    }), "Theme")
+
+    f19("Corner", v95, UDim.new(0.5, 0))
+    local udim4 = UDim2.new(1, 0, 1, 0)
+    local udim5 = UDim2.new(0, 0, 1)
+    local vector3 = Vector2.new(0, 1)
+    local udim6 = UDim2.new()
+
+    local v96 = f5(f4("ScrollingFrame", {
+      Size = udim4,
+      Position = udim5,
+      AnchorPoint = vector3,
+      ScrollBarThickness = 1.5,
+      BackgroundTransparency = 1,
+      ScrollBarImageTransparency = 0.2,
+      ScrollBarImageColor3 = v18["Color Theme"],
+      AutomaticCanvasSize = "Y",
+      ScrollingDirection = "Y",
+      BorderSizePixel = 0,
+      CanvasSize = udim6,
+      Name = ("Container %i [ %s ]"):format(#v90 + 1, title3),
+    }, {
+      f4("UIPadding", {
+        PaddingLeft = UDim.new(0, 10),
+        PaddingRight = UDim.new(0, 10),
+        PaddingTop = UDim.new(0, 10),
+        PaddingBottom = UDim.new(0, 10),
+      }),
+      f4("UIListLayout", { Padding = UDim.new(0, 5) }),
+    }), "ScrollBar")
+
+    table.insert(v90, v96)
+
+    if not v76 then
+      v96.Parent = v57
+    end
+
+    local function f28()
+      if v96.Parent then
+        return
+      end
+
+      for key15, value10 in pairs(v90) do
+        if value10:IsA("ScrollingFrame") and value10 ~= v96 then
+          value10.Parent = nil
+        end
+      end
+
+      v96.Parent = v57
+      v96.Size = UDim2.new(1, 0, 1, 150)
+
+      table.foreach(v1.Tabs, function(p74, p75)
+        if p75.Cont ~= v96 then
+          p75.func:Disable()
+        end
+      end)
+
+      f15({ v96, "Size", UDim2.new(1, 0, 1, 0), 0.3 })
+      f15({ v93, "TextTransparency", 0, 0.35 })
+      f15({ v94, "ImageTransparency", 0, 0.35 })
+      f15({ v95, "Size", UDim2.new(0, 4, 0, 13), 0.35 })
+      f15({ v95, "BackgroundTransparency", 0, 0.35 })
+    end
+
+    v92.Activated:Connect(f28)
+    local v97 = {}
+    v76 = true
+
+    table.insert(v1.Tabs, {
+      TabInfo = { Name = title3, Icon = getIcon },
+      func = v97,
+      Cont = v96,
+    })
+
+    v97.Cont = v96
+
+    function v97:Disable()
+      v96.Parent = nil
+
+      f15({ v93, "TextTransparency", 0.3, 0.35 })
+      f15({ v94, "ImageTransparency", 0.3, 0.35 })
+      f15({ v95, "Size", UDim2.new(0, 4, 0, 4), 0.35 })
+      f15({ v95, "BackgroundTransparency", 1, 0.35 })
+    end
+
+    function v97:Enable()
+      f28()
+    end
+
+    function v97.Visible(p76, p77)
+      v5:ToggleVisible(v92, p77)
+      v5:ToggleParent(v96, p77, v57)
+    end
+
+    function v97:Destroy()
+      v92:Destroy()
+      v96:Destroy()
+    end
+
+    function v97.AddSection(p78, p79)
+      local name3 = type(p79) == "string" and p79 or p79[1] or p79.Name or p79.Title
+        or p79.Section
+
+      local v98 = f4("Frame", v96, {
+        Size = UDim2.new(1, 0, 0, 20),
+        BackgroundTransparency = 1,
+        Name = "Option",
+      })
+
+      local v99 = {}
+
+      local v100 = f5(f4("TextLabel", v98, {
+        Font = Enum.Font.BuilderSansExtraBold,
+        Text = name3,
+        TextColor3 = v18["Color Dark Blue"],
+        Size = UDim2.new(1, -25, 1, 0),
+        Position = UDim2.new(0, 30),
+        BackgroundTransparency = 1,
+        TextTruncate = "AtEnd",
+        TextSize = 11,
+        TextXAlignment = "Left",
+      }), "Text")
+
+      table.insert(v1.Options, { type = "Section", Name = name3, func = v99 })
+
+      function v99.Visible(p80, p81)
+        if p81 == nil then
+          v98.Visible = not v98.Visible
+          return
+        end
+
+        v98.Visible = p81
+      end
+
+      function v99:Destroy()
+        v98:Destroy()
+      end
+
+      function v99.Set(p82, text7)
+        if text7 then
+          v100.Text = f12(text7)
+        end
+      end
+
+      return v99
+    end
+
+    function v97.AddParagraph(p83, p84)
+      local v101, v102 = f21(
+        v96, p84[1] or p84.Title or "Paragraph", p84[2] or p84.Text or "", UDim2.new(1, -20)
+      )
+
+      local v103 = {}
+
+      function v103.Visible(p85, ...)
+        v5:ToggleVisible(v101, ...)
+      end
+
+      function v103:Destroy()
+        v101:Destroy()
+      end
+
+      function v103:SetTitle(p86)
+        v102:SetTitle(f12(p86))
+      end
+
+      function v103:SetDesc(p87)
+        v102:SetDesc(f12(p87))
+      end
+
+      function v103.Set(p88, p89, p90)
+        if p89 and p90 then
+          v102:SetTitle(f12(p89))
+          v102:SetDesc(f12(p90))
+        elseif p89 then
+          v102:SetDesc(f12(p89))
+        end
+      end
+
+      return v103
+    end
+
+    function v97.AddButton(p91, p92)
+      local name4 = p92[1] or p92.Name or p92.Title or "Button!"
+      local desc = p92.Desc or p92.Description or ""
+      local getCallback = v5:GetCallback(p92, 2)
+      local v104, v105 = f21(v96, name4, desc, UDim2.new(1, -20))
+
+      f4("ImageLabel", v104, {
+        Size = UDim2.new(0, 14, 0, 14),
+        Position = UDim2.new(1, -10, 0.5),
+        AnchorPoint = Vector2.new(1, 0.5),
+        BackgroundTransparency = 1,
+        Image = "rbxassetid://123297725917899",
+      })
+
+      v104.Activated:Connect(function() v5:FireCallback(getCallback) end)
+
+      local v106 = {}
+
+      function v106.Visible(p93, ...)
+        v5:ToggleVisible(v104, ...)
+      end
+
+      function v106:Destroy()
+        v104:Destroy()
+      end
+
+      function v106.Callback(p94, ...)
+        v5:InsertCallback(getCallback, ...)
+      end
+
+      function v106.Set(p95, p96, p97)
+        if type(p96) == "string" and type(p97) == "string" then
+          v105:SetTitle(p96)
+          v105:SetDesc(p97)
+        elseif type(p96) == "string" then
+          v105:SetTitle(p96)
+        elseif type(p96) == "function" then
+          getCallback = p96
+        end
+      end
+
+      return v106
+    end
+
+    function v97.AddToggle(p98, p99)
+      local name5 = p99[1] or p99.Name or p99.Title or "Toggle"
+      local desc2 = p99.Desc or p99.Description or ""
+      local getCallback2 = v5:GetCallback(p99, 3)
+      local flag4 = p99[4] or p99.Flag or false
+      local default2 = p99[2] or p99.Default or false
+
+      if f9(flag4) then
+        default2 = f7(flag4)
+      end
+
+      local v107, v108 = f21(v96, name5, desc2, UDim2.new(1, -38))
+
+      local v109 = f5(f4("Frame", v107, {
+        Size = UDim2.new(0, 35, 0, 18),
+        Position = UDim2.new(1, -10, 0.5),
+        AnchorPoint = Vector2.new(1, 0.5),
+        BackgroundColor3 = v18["Color Stroke"],
+      }), "Stroke")
+
+      f19("Corner", v109, UDim.new(0.5, 0))
+
+      local v110 = f5(f4("Frame", f4("Frame", v109, {
+        BackgroundTransparency = 1,
+        Size = UDim2.new(0.8, 0, 0.8, 0),
+        Position = UDim2.new(0.5, 0, 0.5, 0),
+        AnchorPoint = Vector2.new(0.5, 0.5),
+      }), {
+        Size = UDim2.new(0, 12, 0, 12),
+        Position = UDim2.new(0, 0, 0.5),
+        AnchorPoint = Vector2.new(0, 0.5),
+        BackgroundColor3 = v18["Color Theme"],
+      }), "Theme")
+
+      f19("Corner", v110, UDim.new(0.5, 0))
+      local v111
+
+      local function f29(p100)
+        if v111 then
+          return
+        end
+
+        v111 = true
+        default2 = p100
+        f8(flag4, default2)
+        v5:FireCallback(getCallback2, default2)
+
+        if default2 then
+          f15({ v110, "Position", UDim2.new(1, 0, 0.5), 0.25 })
+          f15({ v110, "BackgroundTransparency", 0, 0.25 })
+          f15({ v110, "AnchorPoint", Vector2.new(1, 0.5), 0.25, Wait or false })
+        else
+          f15({ v110, "Position", UDim2.new(0, 0, 0.5), 0.25 })
+          f15({ v110, "BackgroundTransparency", 0.8, 0.25 })
+          f15({ v110, "AnchorPoint", Vector2.new(0, 0.5), 0.25, Wait or false })
+        end
+
+        v111 = false
+      end
+
+      task.spawn(f29, default2)
+      v107.Activated:Connect(function() f29(not default2) end)
+
+      local v112 = {}
+
+      function v112.Visible(p101, ...)
+        v5:ToggleVisible(v107, ...)
+      end
+
+      function v112:Destroy()
+        v107:Destroy()
+      end
+
+      function v112.Callback(p102, ...)
+        v5:InsertCallback(getCallback2, ...)()
+      end
+
+      function v112.Set(p103, p104, p105)
+        if type(p104) == "string" and type(p105) == "string" then
+          v108:SetTitle(p104)
+          v108:SetDesc(p105)
+        elseif type(p104) == "string" then
+          v108:SetTitle(p104, false, true)
+        elseif type(p104) == "boolean" then
+          if v111 and p105 then
+            repeat
+              task.wait()
+            until not v111
+          end
+
+          task.spawn(f29, p104)
+        elseif type(p104) == "function" then
+          getCallback2 = p104
+        end
+      end
+
+      return v112
+    end
+
+    function v97.AddDropdown(p106, p107)
+      local name6 = p107[1] or p107.Name or p107.Title or "Dropdown"
+      local desc3 = p107.Desc or p107.Description or ""
+      local options2 = p107[2] or p107.Options or {}
+      local default3 = p107[3] or p107.Default or {}
+      local flag5 = p107[5] or p107.Flag or false
+      local multiSelect = p107.MultiSelect or false
+      local getCallback3 = v5:GetCallback(p107, 4)
+      local v113, v114 = f21(v96, name6, desc3, UDim2.new(1, -180))
+
+      local v115 = f5(f4("Frame", v113, {
+        Size = UDim2.new(0, 150, 0, 18),
+        Position = UDim2.new(1, -10, 0.5),
+        AnchorPoint = Vector2.new(1, 0.5),
+        BackgroundColor3 = v18["Color Stroke"],
+      }), "Stroke")
+
+      f19("Corner", v115, UDim.new(0, 4))
+
+      local v116 = f5(f4("TextLabel", v115, {
+        Size = UDim2.new(0.85, 0, 0.85, 0),
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.new(0.5, 0, 0.5, 0),
+        BackgroundTransparency = 1,
+        Font = Enum.Font.GothamBold,
+        TextScaled = true,
+        TextColor3 = v18["Color Text"],
+        Text = "...",
+      }), "Text")
+
+      local v117 = f4("ImageLabel", v115, {
+        Size = UDim2.new(0, 15, 0, 15),
+        Position = UDim2.new(0, -5, 0.5),
+        AnchorPoint = Vector2.new(1, 0.5),
+        Image = "rbxassetid://10709791523",
+        BackgroundTransparency = 1,
+      })
+
+      local v118 = f4("TextButton", v53, {
+        Name = "AntiClick",
+        Size = UDim2.new(1, 0, 1, 0),
+        BackgroundTransparency = 1,
+        Visible = false,
+        Text = "",
+      })
+
+      local v119 = f4("Frame", v118, {
+        Size = UDim2.new(v115.Size.X, 0, 0),
+        BackgroundTransparency = 0.1,
+        BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+        AnchorPoint = Vector2.new(0, 1),
+        Name = "DropdownFrame",
+        ClipsDescendants = true,
+        Active = true,
+      })
+
+      f19("Corner", v119, UDim.new(0, 6))
+      f19("Stroke", v119)
+      f19("Gradient", v119, { Rotation = 60 })
+
+      local v120 = f5(f4("ScrollingFrame", v119, {
+        ScrollBarImageColor3 = v18["Color Theme"],
+        Size = UDim2.new(1, 0, 1, 0),
+        ScrollBarThickness = 1.5,
+        BackgroundTransparency = 1,
+        BorderSizePixel = 0,
+        CanvasSize = UDim2.new(),
+        ScrollingDirection = "Y",
+        AutomaticCanvasSize = "Y",
+        Active = true,
+      }, {
+        f4("UIPadding", {
+          PaddingLeft = UDim.new(0, 8),
+          PaddingRight = UDim.new(0, 8),
+          PaddingTop = UDim.new(0, 5),
+          PaddingBottom = UDim.new(0, 5),
+        }),
+        f4("UIListLayout", { Padding = UDim.new(0, 4) }),
+      }), "ScrollBar")
+
+      local v121 = 5
+      local v122 = nil
+
+      local function f30()
+        v122 = true
+
+        f15({ v117, "Rotation", 0, 0.2 })
+        f15({ v119, "Size", UDim2.new(0, 152, 0, 0), 0.2, true })
+        f15({ v117, "ImageColor3", Color3.fromRGB(255, 255, 255), 0.2 })
+
+        v117.Image = "rbxassetid://10709791523"
+        v118.Visible = false
+        v122 = false
+      end
+
+      local function f31()
+        return UDim2.fromOffset(152, v121)
+      end
+
+      local function f32()
+        local count = 0
+
+        for key16, value11 in pairs(v120:GetChildren()) do
+          if value11:IsA("Frame") or value11.Name == "Option" then
+            count = count + 1
+          end
+        end
+
+        v121 = math.clamp(count, 0, 10) * 25 + 10
+
+        if v118.Visible then
+          v118.Visible = true
+          f15({ v119, "Size", f31(), 0.2, true })
+        end
+      end
+
+      local function f33()
+        local absolutePosition = v115.AbsolutePosition
+        local absoluteSize2 = v13.AbsoluteSize
+
+        local v123 = math.clamp(
+          absolutePosition.X / v2, 0, absoluteSize2.X / v2 - v119.Size.X.Offset
+        )
+
+        local v124 = math.clamp(absolutePosition.Y / v2, 0, absoluteSize2.Y / v2)
+        local udim7 = UDim2.fromOffset(v123, v124)
+        local v125 = absolutePosition.Y > absoluteSize2.Y / 1.4 and 1 or v121 > 80 and 0.5 or 0
+        v119.AnchorPoint = Vector2.new(0, v125)
+        f15({ v119, "Position", udim7, 0.1 })
+      end
+
+      local v126 = type(default3) ~= "table" and { default3 } or default3
+      local v127 = {}
+      local value12 = multiSelect and {} or f9(flag5) and f7(flag5) or v126[1]
+
+      if multiSelect then
+        for key17, value13 in pairs(f9(flag5) and f7(flag5) or v126) do
+          if type(key17) == "string" and (options2[key17] or table.find(options2, key17)) then
+            value12[key17] = value13
+          elseif options2[value13] then
+            value12[value13] = true
+          end
+        end
+      end
+
+      local function f34()
+        return v127
+      end
+
+      local function f35()
+        f8(flag5, multiSelect and value12 or tostring(value12))
+        v5:FireCallback(getCallback3, value12)
+      end
+
+      local function f36()
+        if multiSelect then
+          local v128 = {}
+
+          for key18, value14 in pairs(value12) do
+            if value14 then
+              table.insert(v128, key18)
+            end
+          end
+
+          v116.Text = #v128 > 0 and table.concat(v128, ", ") or "..."
+        else
+          v116.Text = tostring(value12 or "...")
+        end
+      end
+
+      local f37
+
+      local function f38(p108)
+        if multiSelect then
+          p108.Stats = not p108.Stats
+          p108.LastCB = tick()
+
+          value12[p108.Name] = p108.Stats
+          f35()
+        else
+          p108.LastCB = tick()
+          value12 = p108.Value
+          f35()
+        end
+
+        f37()
+      end
+
+      local f39, f40
+
+      local function f41(p109, p110)
+        if p110 then
+          table.foreach(v127, f40)
+        end
+
+        table.foreach(p109, f39)
+        f35()
+        f37()
+      end
+
+      function f37()
+        if multiSelect then
+          for key19, value15 in pairs(v127) do
+            local v129 = value15.Stats
+            local nodes = value15.nodes
+
+            f15({ nodes[2], "BackgroundTransparency", v129 and 0 or 0.8, 0.35 })
+
+            f15({
+              nodes[2], "Size", v129 and UDim2.fromOffset(4, 12) or UDim2.fromOffset(4, 4),
+              0.35,
+            })
+
+            f15({ nodes[3], "TextTransparency", v129 and 0 or 0.4, 0.35 })
+          end
+        else
+          for key20, value16 in pairs(v127) do
+            local v130 = value16.Value == value12
+            local nodes2 = value16.nodes
+
+            f15({ nodes2[2], "BackgroundTransparency", v130 and 0 or 1, 0.35 })
+
+            f15({
+              nodes2[2], "Size", v130 and UDim2.fromOffset(4, 14) or UDim2.fromOffset(4, 4),
+              0.35,
+            })
+
+            f15({ nodes2[3], "TextTransparency", v130 and 0 or 0.4, 0.35 })
+          end
+        end
+
+        f36()
+      end
+
+      function f39(p111, p112)
+        local v131 = tostring(type(p111) == "string" and p111 or p112)
+
+        if v127[v131] then
+          return
+        else
+          v127[v131] = {
+            index = p111,
+            Value = p112,
+            Name = v131,
+            Stats = false,
+            LastCB = 0,
+          }
+
+          if multiSelect then
+            local v132 = value12[v131]
+            value12[v131] = v132 or false
+            v127[v131].Stats = v132
+          end
+
+          local v133 = f19("Button", v120, {
+            Name = "Option",
+            Size = UDim2.new(1, 0, 0, 21),
+            Position = UDim2.new(0, 0, 0.5),
+            AnchorPoint = Vector2.new(0, 0.5),
+          })
+
+          f19("Corner", v133, UDim.new(0, 4))
+
+          local v134 = f5(f4("Frame", v133, {
+            Position = UDim2.new(0, 1, 0.5),
+            Size = UDim2.new(0, 4, 0, 4),
+            BackgroundColor3 = v18["Color Theme"],
+            BackgroundTransparency = 1,
+            AnchorPoint = Vector2.new(0, 0.5),
+          }), "Theme")
+
+          f19("Corner", v134, UDim.new(0.5, 0))
+
+          local v135 = f5(f4("TextLabel", v133, {
+            Size = UDim2.new(1, 0, 1),
+            Position = UDim2.new(0, 10),
+            Text = v131,
+            TextColor3 = v18["Color Text"],
+            Font = Enum.Font.FredokaOne,
+            TextXAlignment = "Left",
+            BackgroundTransparency = 1,
+            TextTransparency = 0.4,
+          }), "Text")
+
+          v133.Activated:Connect(function() f38(v127[v131]) end)
+          v127[v131].nodes = { v133, v134, v135 }
+          return
+        end
+      end
+
+      function f40(p113, p114)
+        local v136 = tostring(type(p113) == "string" and p113 or p114)
+
+        if v127[v136] then
+          if multiSelect then
+            value12[v136] = nil
+          else
+            value12 = nil
+          end
+
+          v127[v136].nodes[1]:Destroy()
+          table.clear(v127[v136])
+          v127[v136] = nil
+        end
+      end
+
+      table.foreach(options2, f39)
+      f35()
+      f37()
+
+      v113.Activated:Connect(function()
+        if v122 then
+          return
+        end
+
+        v122 = true
+
+        if v118.Visible then
+          v117.Image = "rbxassetid://10709791523"
+
+          f15({ v117, "ImageColor3", Color3.fromRGB(255, 255, 255), 0.2 })
+          f15({ v119, "Size", UDim2.new(0, 152, 0, 0), 0.2, true })
+
+          v118.Visible = false
+        else
+          v118.Visible = true
+          v117.Image = "rbxassetid://10709790948"
+
+          f15({ v117, "ImageColor3", v18["Color Theme"], 0.2 })
+          f15({ v119, "Size", f31(), 0.2, true })
+        end
+
+        v122 = false
+      end)
+
+      v118.MouseButton1Down:Connect(f30)
+      v118.MouseButton1Click:Connect(f30)
+
+      v48:GetPropertyChangedSignal("Visible"):Connect(f30)
+      v115:GetPropertyChangedSignal("AbsolutePosition"):Connect(f33)
+      v113.Activated:Connect(f32)
+
+      v120.ChildAdded:Connect(f32)
+      v120.ChildRemoved:Connect(f32)
+
+      f33()
+      f32()
+
+      local v137 = {}
+
+      function v137.Visible(p115, ...)
+        v5:ToggleVisible(v113, ...)
+      end
+
+      function v137:Destroy()
+        v113:Destroy()
+      end
+
+      function v137.Callback(p116, ...)
+        v5:InsertCallback(getCallback3, ...)(value12)
+      end
+
+      function v137.Add(p117, ...)
+        local v138 = { ... }
+
+        if type(v138[1]) == "table" then
+          table.foreach(Option, function(p118, p119) f39(p119) end)
+        else
+          table.foreach(v138, function(p120, p121) f39(p121) end)
+        end
+      end
+
+      function v137.Remove(p122, p123)
+        for key21, value17 in pairs(f34()) do
+          if type(p123) == "number" and key21 == p123 or value17.Name == "Option" then
+            f40(key21, value17.Value)
+          end
+        end
+      end
+
+      function v137.Select(p124, p125)
+        if type(p125) == "string" then
+          for key22, value18 in pairs(Options) do
+            if value18.Name == p125 then
+              value18.Active()
+            end
+          end
+        elseif type(p125) == "number" then
+          for key23, value19 in pairs(Options) do
+            if key23 == p125 then
+              value19.Active()
+            end
+          end
+        end
+      end
+
+      function v137.Set(p126, p127, p128)
+        if type(p127) == "table" then
+          f41(p127, not p128)
+        elseif type(p127) == "function" then
+          getCallback3 = p127
+        end
+      end
+
+      return v137
+    end
+
+    function v97.AddSlider(p129, p130)
+      local name7 = p130[1] or p130.Name or p130.Title or "Slider!"
+      local desc4 = p130.Desc or p130.Description or ""
+      local minValue = p130[2] or p130.MinValue or p130.Min or 10
+      local maxValue = p130[3] or p130.MaxValue or p130.Max or 100
+      local increase = p130[4] or p130.Increase or 1
+      local getCallback4 = v5:GetCallback(p130, 6)
+      local flag6 = p130[7] or p130.Flag or false
+      local default4 = p130[5] or p130.Default or 25
+
+      if f9(flag6) then
+        default4 = f7(flag6)
+      end
+
+      local v139 = maxValue
+      minValue = minValue / increase
+      maxValue = v139 / increase
+      local v140, v141 = f21(v96, name7, desc4, UDim2.new(1, -180))
+
+      local v142 = f4("TextButton", v140, {
+        Size = UDim2.new(0.45, 0, 1),
+        Position = UDim2.new(1),
+        AnchorPoint = Vector2.new(1, 0),
+        AutoButtonColor = false,
+        Text = "",
+        BackgroundTransparency = 1,
+      })
+
+      local v143 = f5(f4("Frame", v142, {
+        BackgroundColor3 = v18["Color Stroke"],
+        Size = UDim2.new(1, -20, 0, 6),
+        Position = UDim2.new(0.5, 0, 0.5),
+        AnchorPoint = Vector2.new(0.5, 0.5),
+      }), "Stroke")
+
+      f19("Corner", v143, UDim.new(0, 3))
+
+      local v144 = f5(f4("Frame", v143, {
+        BackgroundColor3 = v18["Color Theme"],
+        Size = UDim2.fromScale(0.3, 1),
+        BorderSizePixel = 0,
+      }), "Theme")
+
+      f19("Corner", v144, UDim.new(0, 3))
+
+      local v145 = f4("Frame", v143, {
+        Size = UDim2.new(0, 6, 0, 12),
+        BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+        Position = UDim2.fromScale(0.3, 0.5),
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        BackgroundTransparency = 0.2,
+      })
+
+      f19("Corner", v145, UDim.new(0, 2))
+
+      local v146 = f5(f4("TextLabel", v142, {
+        Size = UDim2.new(0, 14, 0, 14),
+        AnchorPoint = Vector2.new(1, 0.5),
+        Position = UDim2.new(0, 0, 0.5),
+        BackgroundTransparency = 1,
+        TextColor3 = v18["Color Text"],
+        Font = Enum.Font.FredokaOne,
+        TextSize = 12,
+      }), "Text")
+
+      local v147 = f4("UIScale", v146)
+      local v148 = f4("Frame", v143, { Position = UDim2.new(0, 0, 0.5, 0), Visible = false })
+
+      local function f42(p131)
+        local v149 = tonumber(p131 * increase)
+        local v150 = math.floor(v149 * 100) / 100
+        local text8 = tostring(v150)
+        default4 = v150
+        v146.Text = text8
+        v5:FireCallback(getCallback4, default4)
+      end
+
+      local function f43()
+        local getMouse = localPlayer:GetMouse()
+
+        v145.Position = UDim2.new(math.clamp((getMouse.X - v148.AbsolutePosition.X)
+          / v143.AbsoluteSize.X, 0, 1), 0, 0.5, 0)
+      end
+
+      local function f44()
+        v144.Size = UDim2.new(v145.Position.X.Scale, 0, 1, 0)
+
+        f42((math.floor(v145.Position.X.Scale * maxValue / maxValue * (maxValue - minValue)
+          + minValue)))
+      end
+
+      v142.MouseButton1Down:Connect(function()
+        f15({ v145, "Transparency", 0, 0.3 })
+        v96.ScrollingEnabled = false
+
+        while true do
+          if not userInputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) then
+            break
+          end
+
+          task.wait()
+          f43()
+        end
+
+        f15({ v145, "Transparency", 0.2, 0.3 })
+        v96.ScrollingEnabled = true
+        f8(flag6, default4)
+      end)
+
+      v146:GetPropertyChangedSignal("Text"):Connect(function()
+        v147.Scale = 0.3
+
+        f15({ v147, "Scale", 1.2, 0.1 })
+        f15({ v146, "Rotation", math.random(-1, 1) * 5, 0.15, true })
+        f15({ v147, "Scale", 1, 0.2 })
+        f15({ v146, "Rotation", 0, 0.1 })
+      end)
+
+      function SetSlider(p132)
+        if type(p132) ~= "number" then
+          return
+        else
+          local v151 = minValue * increase
+          f8(flag6, p132)
+
+          f15({
+            v145, "Position",
+            UDim2.fromScale(math.clamp((p132 - v151) / (maxValue * increase - v151), 0, 1), 0.5),
+            0.3, true,
+          })
+
+          return
+        end
+      end
+
+      SetSlider(default4)
+
+      v145:GetPropertyChangedSignal("Position"):Connect(f44)
+      f44()
+
+      local v152 = {}
+
+      function v152.Set(p133, p134, p135)
+        if p134 and p135 then
+          v141:SetTitle(p134)
+          v141:SetDesc(p135)
+        elseif type(p134) == "string" then
+          v141:SetTitle(p134)
+        elseif type(p134) == "function" then
+          getCallback4 = p134
+        elseif type(p134) == "number" then
+          SetSlider(p134)
+        end
+      end
+
+      function v152.Callback(p136, ...)
+        v5:InsertCallback(getCallback4, ...)(tonumber(default4))
+      end
+
+      function v152.Visible(p137, ...)
+        v5:ToggleVisible(v140, ...)
+      end
+
+      function v152:Destroy()
+        v140:Destroy()
+      end
+
+      return v152
+    end
+
+    function v97.AddTextBox(p138, p139)
+      local name8 = p139[1] or p139.Name or p139.Title or "Text Box"
+      local desc5 = p139.Desc or p139.Description or ""
+      local default5 = p139[2] or p139.Default or ""
+      local placeholderText = p139[5] or p139.PlaceholderText or "Input"
+      local clearText = p139[3] or p139.ClearText or false
+      local getCallback5 = v5:GetCallback(p139, 4)
+
+      if type(default5) == "string" then
+        v920 = default5:gsub(" ", ""):len() < 1
+      end
+
+      local v153, v154 = f21(v96, name8, desc5, UDim2.new(1, -38))
+
+      local v155 = f5(f4("Frame", v153, {
+        Size = UDim2.new(0, 150, 0, 18),
+        Position = UDim2.new(1, -10, 0.5),
+        AnchorPoint = Vector2.new(1, 0.5),
+        BackgroundColor3 = v18["Color Stroke"],
+      }), "Stroke")
+
+      f19("Corner", v155, UDim.new(0, 4))
+
+      local v156 = f5(f4("TextBox", v155, {
+        Size = UDim2.new(0.85, 0, 0.85, 0),
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.new(0.5, 0, 0.5, 0),
+        BackgroundTransparency = 1,
+        Font = Enum.Font.GothamBold,
+        TextScaled = true,
+        TextColor3 = v18["Color Text"],
+        ClearTextOnFocus = clearText,
+        PlaceholderText = placeholderText,
+        Text = "",
+      }), "Text")
+
+      local v157 = f4("ImageLabel", v155, {
+        Size = UDim2.new(0, 12, 0, 12),
+        Position = UDim2.new(0, -5, 0.5),
+        AnchorPoint = Vector2.new(1, 0.5),
+        Image = "rbxassetid://15637081879",
+        BackgroundTransparency = 1,
+      })
+
+      local v158 = {}
+
+      local function f45()
+        local text9 = v156.Text
+
+        if text9:gsub(" ", ""):len() > 0 then
+          if v158.OnChanging then
+            text9 = v158.OnChanging(text9) or text9
+          end
+
+          v5:FireCallback(getCallback5, text9)
+          v156.Text = text9
+        end
+      end
+
+      v156.FocusLost:Connect(f45)
+      f45()
+
+      v156.FocusLost:Connect(function()
+        f15({ v157, "ImageColor3", Color3.fromRGB(255, 255, 255), 0.2 })
+      end)
+
+      v156.Focused:Connect(function() f15({ v157, "ImageColor3", v18["Color Theme"], 0.2 }) end)
+
+      v158.OnChanging = false
+
+      function v158.Visible(p140, ...)
+        v5:ToggleVisible(v153, ...)
+      end
+
+      function v158:Destroy()
+        v153:Destroy()
+      end
+
+      return v158
+    end
+
+    function v97.AddDiscordInvite(p141, p142)
+      local name9 = p142[1] or p142.Name or p142.Title or "Discord Server"
+      local desc6 = p142[2] or p142.Desc or p142.Description or ""
+      local icon = p142[3] or p142.Icon or p142.Logo or ""
+      local invite = p142[4] or p142.Invite or p142.Link or ""
+      local online = p142.Online or p142.MembersOnline or 0
+      local members = p142.Members or p142.TotalMembers or 0
+      local banner = p142.Banner or p142.BannerImage or ""
+
+      local v159 = f4("Frame", v96, {
+        Size = UDim2.new(1, 0, 0, 148),
+        Name = "Option",
+        BackgroundTransparency = 1,
+      })
+
+      local v160 = f5(f4("TextLabel", v159, {
+        Size = UDim2.new(1, 0, 0, 15),
+        Position = UDim2.new(0, 5),
+        TextColor3 = Color3.fromRGB(255, 255, 255),
+        Font = Enum.Font.GothamBold,
+        TextXAlignment = "Left",
+        BackgroundTransparency = 1,
+        TextSize = 9,
+        Text = invite,
+      }), "Text")
+
+      local v161 = f5(f4("Frame", v159, {
+        Size = UDim2.new(0, 178, 1, -15),
+        Position = UDim2.new(0, 5, 1, 0),
+        AnchorPoint = Vector2.new(0, 1),
+        BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+        ClipsDescendants = true,
+      }), "Frame")
+
+      f19("Corner", v161, UDim.new(0, 12))
+      f19("Stroke", v161)
+
+      local v162 = f4("ImageLabel", v161, {
+        Size = UDim2.new(1, 0, 0.28, 0),
+        Image = banner,
+        BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+        BackgroundTransparency = banner ~= "" and 1 or 0,
+        ScaleType = Enum.ScaleType.Crop,
+      })
+
+      f19("Corner", v162, UDim.new(0, 12))
+
+      if banner == "" then
+        f4("UIGradient", v162, {
+          Rotation = -15,
+          Color = ColorSequence.new({
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255)),
+          }),
+        })
+      end
+
+      local v163 = f4("ImageLabel", v161, {
+        Size = UDim2.new(0, 33, 0, 33),
+        Position = UDim2.new(0, 10, 0.28, 0),
+        AnchorPoint = Vector2.new(0, 0.5),
+        Image = icon,
+        BackgroundTransparency = icon == "" and 1 or 0,
+        BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+      })
+
+      f19("Corner", v163, UDim.new(0, 8))
+
+      if icon ~= "" then
+        f19("Stroke", v163, nil, Color3.fromRGB(0, 0, 0), 2.2)
+      end
+
+      local v164 = f5(f4("TextLabel", v161, {
+        Size = UDim2.new(1, -20, 0, 10),
+        Position = UDim2.new(0, 10, 0.44, 0),
+        TextXAlignment = "Left",
+        BackgroundTransparency = 1,
+        TextSize = 11,
+        Text = name9,
+        Font = Enum.Font.GothamBold,
+        TextColor3 = Color3.fromRGB(255, 255, 255),
+      }), "Text")
+
+      local v165
+
+      if online > 0 or members > 0 then
+        v165 = f4("Frame", v161, {
+          Size = UDim2.new(1, -20, 0, 9),
+          Position = UDim2.new(0, 7, 0.52, 0),
+          BackgroundTransparency = 1,
+        }, {
+          f4("UIListLayout", {
+            HorizontalAlignment = "Left",
+            VerticalAlignment = "Center",
+            FillDirection = "Horizontal",
+            Padding = UDim.new(0, 4),
+          }),
+          f4("UIPadding", { PaddingLeft = UDim.new(0, 3), PaddingRight = UDim.new(0, 10) }),
+        })
+
+        local function f46(color2, text10)
+          local v166 = f4("Frame", v165, {
+            Size = UDim2.new(0, 0, 1, 0),
+            AutomaticSize = "X",
+            BackgroundTransparency = 1,
+          })
+
+          f19("Corner", f4("Frame", v166, {
+            Size = UDim2.new(0, 3, 0, 3),
+            Position = UDim2.new(0, 5, 0.5, 0),
+            AnchorPoint = Vector2.new(0, 0.5),
+            BackgroundColor3 = color2,
+          }), UDim.new(1, 0))
+
+          f5(f4("TextLabel", v166, {
+            Size = UDim2.new(0, 0, 1, 0),
+            Position = UDim2.new(0, 12, 0.5, 0),
+            AnchorPoint = Vector2.new(0, 0.5),
+            AutomaticSize = "X",
+            BackgroundTransparency = 1,
+            TextSize = 7,
+            Text = text10,
+            Font = Enum.Font.Gotham,
+            TextColor3 = Color3.fromRGB(255, 255, 255),
+          }), "DarkText")
+        end
+
+        if online > 0 then
+          f46(Color3.fromRGB(255, 255, 255), online .. " Online")
+        end
+
+        if members > 0 then
+          f46(Color3.fromRGB(255, 255, 255), members .. " Members")
+        end
+      end
+
+      local v167 = f5(f4("TextLabel", v161, {
+        Size = UDim2.new(1, -60, 0, 8),
+        Position = UDim2.new(0, 10, v165 and 0.6 or 0.56, 0),
+        TextXAlignment = "Left",
+        AutomaticSize = "Y",
+        BackgroundTransparency = 1,
+        TextSize = 8,
+        Text = desc6,
+        TextWrapped = true,
+        Font = Enum.Font.Gotham,
+        TextColor3 = Color3.fromRGB(255, 255, 255),
+      }), "DarkText")
+
+      local v168 = f5(f4("Frame", v161, {
+        Size = UDim2.new(1, 0, desc6 == "" and 0.28 or 0.42, 0),
+        Position = UDim2.new(0, 0, 1, 0),
+        AnchorPoint = Vector2.new(0, 1),
+        BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+        BorderSizePixel = 0,
+      }), "Frame")
+
+      if desc6 ~= "" then
+        f4("UIGradient", v168, {
+          Rotation = -90,
+          Transparency = NumberSequence.new({
+            NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(0.6, 0),
+            NumberSequenceKeypoint.new(1, 1),
+          }),
+        })
+      end
+
+      local v169 = f5(f4("TextButton", v168, {
+        Position = UDim2.new(0.5, 0, 1, -9),
+        Size = UDim2.new(1, -18, 0, 18),
+        AnchorPoint = Vector2.new(0.5, 1),
+        Text = "Join Server",
+        Font = Enum.Font.GothamBold,
+        TextSize = 10,
+        BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+        TextColor3 = Color3.fromRGB(0, 0, 0),
+      }), "Text")
+
+      f19("Corner", v169, UDim.new(0.5, 0))
+      local v170 = 0
+
+      v169.Activated:Connect(function()
+        if tick() - v170 < 5 then
+          return
+        else
+          v170 = tick()
+          local text11 = v169.Text
+          v169.Text = "Copied to Clipboard!"
+
+          if setclipboard then
+            setclipboard(invite)
+          end
+
+          task.wait(4)
+
+          if v169 and v169.Parent then
+            v169.Text = text11
+          end
+
+          return
+        end
+      end)
+
+      local v171 = {}
+
+      function v171:Destroy()
+        v159:Destroy()
+      end
+
+      function v171.Visible(p143, ...)
+        v5:ToggleVisible(v159, ...)
+      end
+
+      function v171.Set(p144, text12, text13, text14)
+        if text12 then
+          v164.Text = text12
+        end
+
+        if text13 then
+          v167.Text = text13
+        end
+
+        if text14 then
+          v160.Text = text14
+        end
+      end
+
+      return v171
+    end
+
+    return v97
+  end
+
+  v73.Activated:Connect(v75.CloseBtn)
+  v74.Activated:Connect(v75.MinimizeBtn)
+  return v75
+end
+
+return v1
+
+-- https://discord.gg/AwGHNh7Z7T
