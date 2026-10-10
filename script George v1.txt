@@ -443,7 +443,7 @@ DevLayout.Padding   = UDim.new(0, 7)
 DevLayout.SortOrder = Enum.SortOrder.LayoutOrder
 DevLayout.Parent    = DevSection
 
-local devNames = {"دانيال و جورج"}
+local devNames = {"دانيال"}
 for _, name in ipairs(devNames) do
     local row = Instance.new("Frame")
     row.Size                   = UDim2.new(1, 0, 0, 44)
@@ -511,13 +511,12 @@ local function SetupNameAndBio()
         local RE       = ReplicatedStorage:WaitForChild("RE")
         local nameText = RE:WaitForChild("1RPNam1eTex1t")
         local nameColor= RE:WaitForChild("1RPNam1eColo1r")
-        nameText:FireServer("RolePlayName",  " -George Hub-")
+        nameText:FireServer("RolePlayName",  "جاري تحميل سكربت GEORGE")
         nameColor:FireServer("PickingRPNameColor", Color3.fromRGB(255, 255, 255))
-        nameText:FireServer("RolePlayBio", "جاري تحميل سكربت " )
-        nameColor:FireServer("PickingRPBioColor",  Color3.fromRGB(0, 0, 0))
+        nameText:FireServer("RolePlayBio",   "تطوير GEORGE AND DANIEL")
+        nameColor:FireServer("PickingRPBioColor",  Color3.fromRGB(180, 180, 180))
     end)
 end
-
 
 local function LoadScriptAndExit(url, scriptType)
     SafePlaySound("rbxassetid://72989805559135", 0.6)
