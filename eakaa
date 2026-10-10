@@ -4456,4 +4456,9 @@ end
 
 return redzlib
 
+local Window = redzlib:MakeWindow({
+    Title = "George hub",
+    SubTitle = "by m_16xcr",
+})
+
 -- by George
