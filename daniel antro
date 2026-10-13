@@ -1,0 +1,91 @@
+local plr = game.Players.LocalPlayer
+local guiParent = gethui and gethui() or plr.PlayerGui
+pcall(function() guiParent.FINAL_INTRO:Destroy() end)
+
+local gui = Instance.new("ScreenGui", guiParent)
+gui.Name = "FINAL_INTRO"
+
+local Card = Instance.new("Frame", gui)
+Card.Size = UDim2.fromOffset(360,380) -- كبرت العرض من 310 الى 360
+Card.Position = UDim2.new(0.5,0,0.5,0)
+Card.AnchorPoint = Vector2.new(0.5,0.5)
+Card.BackgroundColor3 = Color3.fromRGB(30,10,15) -- فتحت اللون شوي
+Card.BackgroundTransparency = 0.25 -- شفافية 25% فخمة
+Instance.new("UICorner", Card).CornerRadius = UDim.new(0,15)
+
+local Stroke = Instance.new("UIStroke", Card)
+Stroke.Color = Color3.fromRGB(128,0,32)
+Stroke.Thickness = 3
+Stroke.Transparency = 0.2 -- حتى الحدود شفافة شوي
+
+local Img = Instance.new("ImageLabel", Card)
+Img.Size = UDim2.fromOffset(120,120)
+Img.Position = UDim2.new(0.5,-60,0,20)
+Img.BackgroundTransparency = 1
+Img.Image = "rbxthumb://type=AvatarHeadShot&id="..plr.UserId.."&w=150&h=150"
+Instance.new("UICorner", Img).CornerRadius = UDim.new(1,0)
+
+local N1 = Instance.new("TextLabel", Card)
+N1.Text = plr.DisplayName
+N1.Size = UDim2.new(1,0,0,30)
+N1.Position = UDim2.new(0,0,0,155)
+N1.BackgroundTransparency = 1
+N1.TextColor3 = Color3.new(1,1,1)
+N1.Font = Enum.Font.GothamBlack
+N1.TextSize = 22
+
+local N2 = Instance.new("TextLabel", Card)
+N2.Text = "@"..plr.Name
+N2.Size = UDim2.new(1,0,0,20)
+N2.Position = UDim2.new(0,0,0,185)
+N2.BackgroundTransparency = 1
+N2.TextColor3 = Color3.fromRGB(220,20,60)
+N2.Font = Enum.Font.GothamBold
+N2.TextSize = 14
+
+-- حقوق المطور تلمع قوس قزح
+local Rights = Instance.new("TextLabel", Card)
+Rights.Text = "حقوق المطور دانيال ✨"
+Rights.Size = UDim2.new(1,0,0,30)
+Rights.Position = UDim2.new(0,0,0,215)
+Rights.BackgroundTransparency = 1
+Rights.Font = Enum.Font.GothamBlack
+Rights.TextSize = 17
+Rights.TextColor3 = Color3.new(1,1,1)
+
+local Gradient = Instance.new("UIGradient", Rights)
+Gradient.Color = ColorSequence.new{
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(128,0,32)),
+    ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255,255,255)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(128,0,32))
+}
+
+local Glow = Instance.new("UIStroke", Rights)
+Glow.Color = Color3.fromRGB(255,0,50)
+Glow.Thickness = 2
+
+-- تحريك اللمعان
+task.spawn(function()
+    while Rights.Parent do
+        for i = -1,1,0.05 do
+            if not Rights.Parent then break end
+            Gradient.Offset = Vector2.new(i,0)
+            task.wait(0.02)
+        end
+    end
+end)
+
+local Btn = Instance.new("TextButton", Card)
+Btn.Text = "تشغيل ▶"
+Btn.Size = UDim2.fromOffset(190,48)
+Btn.Position = UDim2.new(0.5,-95,0,260)
+Btn.BackgroundColor3 = Color3.fromRGB(128,0,32)
+Btn.TextColor3 = Color3.new(1,1,1)
+Btn.Font = Enum.Font.GothamBlack
+Btn.TextSize = 18
+Instance.new("UICorner", Btn).CornerRadius = UDim.new(0,10)
+
+Btn.MouseButton1Click:Connect(function()
+    gui:Destroy()
+    loadstring(game:HttpGet("https://encrypt-x.pages.dev/Scripts?Id=9012111915890"))()
+end)
