@@ -1,6 +1,4 @@
--- ========================================================
---  1. إعداد الخدمات والمتغيرات الأساسية (Services & Variables)
--- ========================================================
+
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local CoreGui = game:GetService("CoreGui")
@@ -26,7 +24,6 @@ local TargetName = ""
 local TargetStatusLabel = nil
 
 local isAntiAFK = false
-local afkTime = 0
 
 -- متغيرات الاتصال والحركات المخصصة
 getgenv().SpyConnection = nil
@@ -37,9 +34,6 @@ local backHugTrack = nil
 local frontHugConnection = nil
 local frontHugTrack = nil
 
--- ========================================================
---  2. الدوال المساعدة (Helper Functions & Sound System)
--- ========================================================
 local function GetTr(text)
     return text
 end
@@ -284,7 +278,7 @@ local function Tab(name, order, renderCallback)
 end
 
 -- ========================================================
---  5. كود تبويب اللاعبين (Players Tab) + كافة الحركات القديمة والجديدة
+--  5. كود تبويب اللاعبين (Players Tab)
 -- ========================================================
 local playersTabBtn = Tab("👤 اللاعبين", 4, function()
     local pprof = Instance.new("Frame", Content); pprof.Size = UDim2.new(1, 0, 0, 140); pprof.BackgroundColor3 = Color3.new(ThemeColor.R*0.12, ThemeColor.G*0.12, ThemeColor.B*0.12); pprof.BackgroundTransparency = 0.35; pprof.ZIndex = 4; Instance.new("UICorner", pprof); table.insert(ThemedMenus, pprof)
@@ -301,16 +295,15 @@ local playersTabBtn = Tab("👤 اللاعبين", 4, function()
     local afkBtn = Instance.new("TextButton", pprof); afkBtn.Size = UDim2.new(0, 75, 0, 22); afkBtn.Position = UDim2.new(0, 10, 0, 90); afkBtn.Font = SafeFont; afkBtn.TextSize = 11; afkBtn.TextColor3 = Color3.new(1,1,1); afkBtn.ZIndex = 4; Instance.new("UICorner", afkBtn)
     local afkTimerL = Instance.new("TextLabel", pprof); afkTimerL.Size = UDim2.new(0, 75, 0, 15); afkTimerL.Position = UDim2.new(0, 10, 0, 115); afkTimerL.BackgroundTransparency = 1; afkTimerL.TextColor3 = Color3.new(0.8, 0.8, 0.8); afkTimerL.Font = SafeFont; afkTimerL.TextSize = 11; afkTimerL.Text = "00:00:00"; afkTimerL.ZIndex = 4
     
+    -- المؤقت يعمل تلقائياً وبشكل دائم فور تشغيل الواجهة
+    local sessionTime = 0
     task.spawn(function()
         while task.wait(1) do
-            if isAntiAFK then
-                afkTime = afkTime + 1
-                local h = math.floor(afkTime / 3600); local m = math.floor((afkTime % 3600) / 60); local s = afkTime % 60
-                afkTimerL.Text = string.format("%02d:%02d:%02d", h, m, s)
-            else
-                afkTime = 0
-                afkTimerL.Text = "00:00:00"
-            end
+            sessionTime = sessionTime + 1
+            local h = math.floor(sessionTime / 3600)
+            local m = math.floor((sessionTime % 3600) / 60)
+            local s = sessionTime % 60
+            afkTimerL.Text = string.format("%02d:%02d:%02d", h, m, s)
         end
     end)
 
@@ -324,11 +317,15 @@ local playersTabBtn = Tab("👤 اللاعبين", 4, function()
                 leavesL.Text = "مرات الخروج: " .. PlayerActivity[TargetUserId].Leaves
             end
 
-            if TargetPlayer and TargetPlayer.Parent == Players then
+            -- التحقق الدقيق مما إذا كان اللاعب موجوداً حقاً داخل السيرفر
+            local activePlayer = Players:GetPlayerByUserId(TargetUserId)
+            if activePlayer then
+                TargetPlayer = activePlayer
                 TargetStatusLabel.Text = GetTr("✅ متصل الآن")
                 TargetStatusLabel.TextColor3 = Color3.fromRGB(0, 200, 0)
-                pcall(function() dateL.Text = GetTr("تاريخ الحساب: ") .. os.date("%Y/%m/%d", os.time() - (TargetPlayer.AccountAge * 86400)) end)
+                pcall(function() dateL.Text = GetTr("تاريخ الحساب: ") .. os.date("%Y/%m/%d", os.time() - (activePlayer.AccountAge * 86400)) end)
             else
+                TargetPlayer = nil
                 TargetStatusLabel.Text = GetTr("❌ غير متصل (غادر)")
                 TargetStatusLabel.TextColor3 = Color3.fromRGB(200, 0, 0)
             end
@@ -343,6 +340,15 @@ local playersTabBtn = Tab("👤 اللاعبين", 4, function()
     end
 
     UpdateTargetUI()
+
+    -- حلقة مستمرة للتحقق من حالة اتصال اللاعب المختار وتحديث الواجهة تلقائياً
+    task.spawn(function()
+        while task.wait(0.5) do
+            if TargetUserId then
+                UpdateTargetUI()
+            end
+        end
+    end)
 
     pBox:GetPropertyChangedSignal("Text"):Connect(function() 
         local txt = pBox.Text:lower()
@@ -801,9 +807,6 @@ local playersTabBtn = Tab("👤 اللاعبين", 4, function()
     end)
 end)
 
--- ========================================================
---  6. إعادة تحميل الحركات تلقائياً عند الرسبون (CharacterAdded)
--- ========================================================
 LP.CharacterAdded:Connect(function(newChar)
     local hum = newChar:WaitForChild("Humanoid", 5)
     local hrp = newChar:WaitForChild("HumanoidRootPart", 5)
@@ -913,7 +916,7 @@ LP.CharacterAdded:Connect(function(newChar)
     end
 end)
 
--- تحديث الحجم التلقائي للسكورل
+
 Content.CanvasSize = UDim2.new(0, 0, 0, UIListLayout.AbsoluteContentSize.Y + 20)
 UIListLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
     Content.CanvasSize = UDim2.new(0, 0, 0, UIListLayout.AbsoluteContentSize.Y + 20)
