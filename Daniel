@@ -1790,9 +1790,9 @@ end
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
 			Title = "إغلاق",  
-			Text = "هل حقا بدك تقفل سكربت ؟", -- رساله قفل الواجهه
+			Text = "بدك تقفل السكربت ؟", -- رساله قفل الواجهه
 			Options = {
-				{"نعم", function()  -- باتن الموافقه ايزي يعني
+				{"اه حل عن ط**زي", function()  -- باتن الموافقه ايزي يعني
 					ScreenGui:Destroy()
 				end},
 				{"لا"} -- باتن عدم الموافقه علي القفل
@@ -2056,7 +2056,7 @@ end
         if isRightsTab and not Container:FindFirstChild("AutoRightsPanel") then
             local RightsPanel = Create("Frame", Container, {
                 Name = "AutoRightsPanel",
-                Size = UDim2.new(1, 0, 0, 156),
+                Size = UDim2.new(1, 0, 0, 164),
                 BackgroundColor3 = Color3.fromRGB(0, 0, 0),
                 BorderSizePixel = 0,
                 LayoutOrder = -100,
@@ -2112,8 +2112,8 @@ end
 
                 local Avatar = Create("ImageLabel", MemberCard, {
                     Name = "Avatar",
-                    Size = UDim2.fromOffset(58, 58),
-                    Position = UDim2.new(0.5, 0, 0, 5),
+                    Size = UDim2.fromOffset(48, 48),
+                    Position = UDim2.new(0.5, 0, 0, 4),
                     AnchorPoint = Vector2.new(0.5, 0),
                     BackgroundColor3 = Color3.fromRGB(30, 30, 30),
                     BorderSizePixel = 0,
@@ -2122,10 +2122,37 @@ end
                 })
                 Make("Corner", Avatar, UDim.new(1, 0))
 
+                -- حواف بيضاء متوهجة حول كل صورة، بنفس طابع حواف الواجهة.
+                Create("UIStroke", Avatar, {
+                    Name = "AvatarGlowSoft",
+                    Color = Color3.fromRGB(255, 255, 255),
+                    Thickness = 4,
+                    Transparency = 0.72,
+                })
+                Create("UIStroke", Avatar, {
+                    Name = "AvatarGlow",
+                    Color = Color3.fromRGB(255, 255, 255),
+                    Thickness = 1.5,
+                    Transparency = 0.05,
+                })
+
+                local UsernameLabel = Create("TextLabel", MemberCard, {
+                    Name = "Username",
+                    Size = UDim2.new(1, -4, 0, 18),
+                    Position = UDim2.new(0, 2, 0, 55),
+                    BackgroundTransparency = 1,
+                    Text = "@" .. tostring(RightsUsers[member.Key] or "Username"),
+                    TextColor3 = Color3.fromRGB(255, 255, 255),
+                    Font = Enum.Font.Gotham,
+                    TextSize = 9,
+                    TextTruncate = Enum.TextTruncate.AtEnd,
+                    TextXAlignment = Enum.TextXAlignment.Center,
+                })
+
                 Create("TextLabel", MemberCard, {
                     Name = "Role",
-                    Size = UDim2.new(1, -4, 0, 22),
-                    Position = UDim2.new(0, 2, 1, -25),
+                    Size = UDim2.new(1, -4, 0, 24),
+                    Position = UDim2.new(0, 2, 0, 75),
                     BackgroundTransparency = 1,
                     Text = member.Label,
                     TextColor3 = Color3.fromRGB(255, 255, 255),
@@ -3070,4 +3097,4 @@ end
 return redzlib
 
 
--- by Velmorith
+-- by George and daniel
